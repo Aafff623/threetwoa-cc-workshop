@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/banner.png" alt="threetwoa-cc-workshop banner" width="100%">
+</p>
+
+<p align="center">
   <h1 align="center">threetwoa-cc-workshop</h1>
   <p align="center"><strong>AI Workflow Operating System — Claude Code 配置工坊 &amp; 知识资产库</strong></p>
 </p>
