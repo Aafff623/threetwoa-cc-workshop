@@ -160,7 +160,7 @@ reports/raw/ ──提炼──▶ docs/ ──索引──▶ registry/
 
 1. **Clone**
    ```bash
-   git clone https://github.com/threetwoa/threetwoa-cc-workshop.git
+   git clone https://github.com/Aafff623/threetwoa-cc-workshop.git
    cd threetwoa-cc-workshop
    ```
 

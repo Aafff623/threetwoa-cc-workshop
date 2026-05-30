@@ -8,7 +8,7 @@ owner: threetwoa
 
 # 工作流注册表
 
-本文件记录 my-claude 仓库中定义的所有工作流。
+本文件记录 threetwoa-cc-workshop 仓库中定义的所有工作流。
 
 ## 1. Deep Research
 

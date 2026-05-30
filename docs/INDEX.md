@@ -14,9 +14,9 @@ owner: threetwoa
 |------|------|------|------|
 | [feature-handbook](claude-code/feature-handbook.md) | reference | active | 全功能谱系与工作流手册 |
 | [skills-inventory](claude-code/skills-inventory.md) | reference | active | 本机 Skills 全量汇总 |
-| [diagram-skills-reference](claude-code/diagram-skills-reference.md) | reference | 画图技能参考 |
-| [codegraph-gitnexus-guide](claude-code/codegraph-gitnexus-guide.md) | reference | 三工具详解 |
-| [claude-mem-guide](claude-code/claude-mem-guide.md) | reference | Claude-Mem 安装与使用 |
+| [diagram-skills-reference](claude-code/diagram-skills-reference.md) | reference | active | 画图技能参考 |
+| [codegraph-gitnexus-guide](claude-code/codegraph-gitnexus-guide.md) | reference | active | 三工具详解 |
+| [claude-mem-guide](claude-code/claude-mem-guide.md) | reference | active | Claude-Mem 安装与使用 |
 | [tri-layer-workflow](claude-code/tri-layer-workflow.md) | workflow | active | GPT→Claude Code→Codex 三层协作模型 |
 
 ## UI Workflow
@@ -59,7 +59,7 @@ owner: threetwoa
 | [04-ui-workflow-architecture](../reorg/04-ui-workflow-architecture.md) | architecture | active | UI 工作流 |
 | [05-migration-plan](../reorg/05-migration-plan.md) | plan | active | 迁移计划 |
 | [06-execution-log](../reorg/06-execution-log.md) | log | active | 迁移执行日志 |
-| [07-verification-report](../reorg/07-verification-report.md) | report | active | 迁移验证报告(待更新) |
+| [07-verification-report](../reorg/07-verification-report.md) | report | active | 迁移验证报告 |
 | [08-multi-agent-collaboration-proposal](../reorg/08-multi-agent-collaboration-proposal.md) | proposal | draft | 多 Agent 协作分工方案 |
 | [09-continuation-status](../reorg/09-continuation-status.md) | report | active | 会话延续状态 |
 
@@ -85,4 +85,8 @@ owner: threetwoa
 | 文档 | 类型 | 说明 |
 |------|------|------|
 | [project-DESIGN.md](../templates/ui-workflow/project-DESIGN.md) | template | UI 项目设计系统模板 |
+| [project-CLAUDE.md](../templates/ui-workflow/project-CLAUDE.md) | template | UI 项目 CLAUDE.md 模板 |
+| [project-PRODUCT.md](../templates/ui-workflow/project-PRODUCT.md) | template | UI 项目 PRODUCT.md 模板 |
 | [gsap-checklist.md](../templates/ui-workflow/gsap-checklist.md) | template | GSAP 实现检查清单 |
+| [porting-checklist.md](../templates/heroui/porting-checklist.md) | template | HeroUI 移植检查清单 |
+| [dashboard-starter/](../templates/heroui/dashboard-starter/README.md) | template | HeroUI Dashboard 11 文件骨架 |

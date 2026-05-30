@@ -18,9 +18,13 @@ owner: threetwoa
 | `docs/claude-code/codegraph-gitnexus-guide.md` | reference | CodeGraph_GitNexus_grill-me_三工具详解.md | active |
 | `docs/claude-code/claude-mem-guide.md` | reference | Claude-Mem 安装与验证 Handoff.md + 配置与使用指南.md | active |
 | `docs/heroui/component-reference.md` | reference | heroui-pro-v3-component-reference-and-porting-guide.md | active |
-| `docs/ui-workflow/workflow-standard.md` | workflow | reports/ui-workflow/03-ui-workflow-standard.md | active |
-| `docs/ui-workflow/tool-routing-cheatsheet.md` | reference | reports/ui-workflow/04-ui-tool-routing-cheatsheet.md | active |
-| `docs/ui-workflow/gsap-motion-guide.md` | reference | reports/ui-workflow/05-gsap-motion-layer-analysis.md | active |
+| `docs/ui-workflow/workflow-standard.md` | workflow | archive/2026-05-30/source-03-ui-workflow-standard.md | active |
+| `docs/ui-workflow/tool-routing-cheatsheet.md` | reference | archive/2026-05-30/source-04-ui-tool-routing-cheatsheet.md | active |
+| `docs/ui-workflow/gsap-motion-guide.md` | reference | archive/2026-05-30/source-05-gsap-motion-layer-analysis.md | active |
+| `docs/ui-workflow/anti-pattern-cookbook.md` | reference | archive/2026-05-30 source files | active |
+| `docs/ui-workflow/diagram-tool-selection-guide.md` | reference | archive/2026-05-30 source files | active |
+| `docs/ui-workflow/skill-combination-recipes.md` | workflow | archive/2026-05-30 source files | active |
+| `docs/ui-workflow/windows-skill-gap-workaround.md` | reference | archive/2026-05-30 source files | active |
 
 ## 原始报告资产
 

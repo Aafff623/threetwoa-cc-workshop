@@ -8,13 +8,13 @@ owner: threetwoa
 
 # 技能注册表
 
-本文件记录 my-claude 仓库引用的所有技能（内部 + 外部）。
+本文件记录 threetwoa-cc-workshop 仓库引用的所有技能（内部 + 外部）。
 
 ## 内部技能
 
 | Name | Type | Trigger | Description | Status | Location |
 |------|------|---------|-------------|--------|----------|
-| my-claude-repo-manager | internal | 仓库管理操作 | 管理 my-claude 仓库结构、索引与 README 生成 | ✅ active | `.claude/skills/my-claude-repo-manager/` |
+| my-claude-repo-manager | internal | 仓库管理操作 | 管理 threetwoa-cc-workshop 仓库结构、索引与 README 生成 | ✅ active | `.claude/skills/my-claude-repo-manager/` |
 | report-to-doc-distiller | internal | `/distill` 命令 | 将原始报告蒸馏为 docs/ 下的持久知识文档 | ✅ active | `.claude/skills/report-to-doc-distiller/` |
 
 ## 外部技能 — UI/设计

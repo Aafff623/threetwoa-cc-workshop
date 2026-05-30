@@ -14,7 +14,7 @@
     },
     {
       "path": "README.md",
-      "title": "my-claude 仓库说明",
+      "title": "threetwoa-cc-workshop 仓库说明",
       "type": "registry",
       "status": "active",
       "tags": ["registry", "config"],
@@ -120,7 +120,7 @@
       "tags": ["ui-workflow", "workflow"],
       "created": "2026-05-30",
       "modified": "2026-05-30",
-      "sourceFiles": ["source-03-ui-workflow-standard.md"]
+      "sourceFiles": ["archive/2026-05-30/source-03-ui-workflow-standard.md"]
     },
     {
       "path": "docs/ui-workflow/tool-routing-cheatsheet.md",
@@ -130,7 +130,7 @@
       "tags": ["ui-workflow", "reference"],
       "created": "2026-05-30",
       "modified": "2026-05-30",
-      "sourceFiles": ["source-04-ui-tool-routing-cheatsheet.md"]
+      "sourceFiles": ["archive/2026-05-30/source-04-ui-tool-routing-cheatsheet.md"]
     },
     {
       "path": "docs/ui-workflow/gsap-motion-guide.md",
@@ -140,7 +140,7 @@
       "tags": ["ui-workflow", "gsap", "animation", "reference"],
       "created": "2026-05-30",
       "modified": "2026-05-30",
-      "sourceFiles": ["source-05-gsap-motion-layer-analysis.md"]
+      "sourceFiles": ["archive/2026-05-30/source-05-gsap-motion-layer-analysis.md"]
     },
     {
       "path": "docs/ui-workflow/anti-pattern-cookbook.md",
@@ -305,6 +305,16 @@
     {
       "path": ".claude/skills/my-claude-repo-manager/SKILL.md",
       "title": "仓库管理技能",
+      "type": "skill",
+      "status": "active",
+      "tags": ["claude-code", "skill", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/skills/report-to-doc-distiller/SKILL.md",
+      "title": "报告蒸馏技能",
       "type": "skill",
       "status": "active",
       "tags": ["claude-code", "skill", "config"],

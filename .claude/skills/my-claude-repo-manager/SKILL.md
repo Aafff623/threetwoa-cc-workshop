@@ -1,3 +1,15 @@
+---
+name: my-claude-repo-manager
+description: 仓库索引管理、分类、归档与统计技能
+allowed-tools:
+  - Read
+  - Write
+  - Glob
+  - Grep
+  - Bash
+user-invocable: true
+---
+
 # my-claude-repo-manager
 
 仓库索引管理、分类、归档与统计技能。

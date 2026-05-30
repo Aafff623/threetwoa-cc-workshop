@@ -8,7 +8,7 @@ prev_agent: opencode (glm-5.1)
 next_agent: TBD
 ---
 
-# Handoff: my-claude 仓库重组 Round 2
+# Handoff: threetwoa-cc-workshop 仓库重组 Round 2
 
 > 本文档供下一个 Agent 快速理解仓库现状、已完成工作、遗留问题和下一步行动。
 
@@ -17,20 +17,17 @@ next_agent: TBD
 ## 1. 仓库位置
 
 ```
-D:\OneDrive\Desktop\my-claude\
+D:\OneDrive\Desktop\threetwoa-cc-workshop\
 ```
 
-**注意**：当前对话的工作区是 `D:\OneDrive\Desktop\test-demo`，不是 my-claude 仓库。操作 my-claude 文件时需用绝对路径。
+**远程仓库**：`https://github.com/Aafff623/threetwoa-cc-workshop.git`
 
 ---
 
 ## 2. Git 状态
 
-- 已执行 `git init`，完成 2 次提交
-- **没有绑定任何 GitHub remote**（`git remote -v` 为空）
-- 提交记录：
-  - `0736785` — 首次提交，88 files, 17,071 insertions
-  - `1d6facc` — component-reference.md 补全，303 insertions
+- 已绑定 GitHub remote：`https://github.com/Aafff623/threetwoa-cc-workshop.git`
+- 已完成多次推送，分支 `master`
 - `.gitignore` 已配置（node_modules, .env, .DS_Store, .obsidian, registry/.tmp/, ~$*）
 
 ---
@@ -76,7 +73,7 @@ D:\OneDrive\Desktop\my-claude\
 ## 4. 仓库目录结构
 
 ```
-my-claude/
+threetwoa-cc-workshop/
 ├── .claude/                        # Claude Code 生态配置
 │   ├── CLAUDE.md                   # Agent 人格配置（Hermes 风格）
 │   ├── README.md                   # .claude 目录说明
@@ -190,7 +187,7 @@ my-claude/
 | 生熟分离 | `reports/raw/` = 原始，`docs/` = 提炼 | 明确边界 |
 | 中文策略 | 正文中文，技术术语英文 | 读写两便 |
 | 三层工作流 | GPT(brain) → Claude Code(execute) → Codex(review) | 各取所长 |
-| Git | 本地 repo，无 remote | 当前阶段不需要远程同步 |
+| Git | 已绑定 GitHub remote，分支 master | 远程同步已就绪 |
 | frontmatter 格式 | `title, type, status, source_files, updated, owner` | 统一元数据 |
 
 ---
@@ -231,7 +228,7 @@ owner: threetwoa
 
 | 项 | 说明 |
 |----|------|
-| GitHub Remote | 当前纯本地 repo，可按需添加 `git remote add origin` |
+| GitHub Remote | ✅ 已绑定 `Aafff623/threetwoa-cc-workshop` | 随时可推送 |
 | CI/CD | 目前无，仓库纯文档+模板，暂不需要 |
 | `registry/asset-index.md` | 未同步 Round 2 新增文件，需更新 |
 | `docs/INDEX.md` | 已更新，但 `.claude/skills/` 和 `templates/` 未在索引中 |

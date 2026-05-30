@@ -1,3 +1,15 @@
+---
+name: report-to-doc-distiller
+description: 将原始报告提炼为长期知识文档的蒸馏技能
+allowed-tools:
+  - Read
+  - Write
+  - Glob
+  - Grep
+  - Bash
+user-invocable: true
+---
+
 # report-to-doc-distiller
 
 将原始报告提炼为长期知识文档的蒸馏技能。
