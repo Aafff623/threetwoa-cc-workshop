@@ -1,0 +1,121 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-05-30",
+  "commands": [
+    {
+      "name": "restructure-repo",
+      "description": "执行仓库重组：创建目录、移动文件、更新索引、生成日志。支持 dry-run 和分阶段执行，仅在审批后执行。这是破坏性操作（移动文件），必须经用户明确审批。",
+      "filePath": ".claude/commands/restructure-repo.md",
+      "status": "active",
+      "requiresApproval": true,
+      "parameters": [
+        {
+          "name": "--dry-run",
+          "type": "flag",
+          "default": false,
+          "description": "模拟执行，仅输出即将发生的操作，不实际移动任何文件"
+        },
+        {
+          "name": "--phase",
+          "type": "int",
+          "default": 0,
+          "description": "从指定阶段开始执行（1-5），0 为全部阶段。1=验证计划，2=创建目录，3=移动/复制文件，4=更新索引，5=验证"
+        }
+      ],
+      "phases": [
+        { "phase": 1, "name": "验证计划", "description": "读取迁移计划，解析映射行，验证文件存在性和目标冲突" },
+        { "phase": 2, "name": "创建目录", "description": "收集目标路径，创建缺失目录（幂等操作）" },
+        { "phase": 3, "name": "文件操作", "description": "按映射表执行 move/copy/distill/archive 操作" },
+        { "phase": 4, "name": "更新索引", "description": "更新 docs/INDEX.md、registry/asset-index.md、registry/decision-log.md" },
+        { "phase": 5, "name": "验证", "description": "检查断裂链接、孤儿文件、空目录" }
+      ],
+      "safetyConstraints": [
+        "绝不删除任何文件（仅 move 或 archive）",
+        "原始报告必须保留在 reports/raw/ 或 archive/",
+        "distill 产物必须包含 source_files frontmatter",
+        "执行前必须获得用户明确批准",
+        "使用 write 工具写入文件，禁止 PowerShell 写入含中文内容"
+      ]
+    },
+    {
+      "name": "distill-report",
+      "description": "将 reports/raw/ 原始报告提炼为 docs/ 长期知识文档。支持指定类型，质量门控，与 report-distiller agent 协同。",
+      "filePath": ".claude/commands/distill-report.md",
+      "status": "active",
+      "requiresApproval": false,
+      "parameters": [
+        {
+          "name": "source_path",
+          "type": "string",
+          "default": null,
+          "description": "原始报告路径，如 reports/raw/heroui/template-architecture.md。省略时交互选择。"
+        },
+        {
+          "name": "--type",
+          "type": "enum",
+          "values": ["reference", "workflow", "principle"],
+          "default": null,
+          "description": "输出文档类型。省略时根据报告内容自动检测：包含步骤/流程→workflow，架构/对比/规范→reference，理念/最佳实践→principle"
+        }
+      ],
+      "processingSteps": [
+        { "step": 1, "name": "读取源报告", "description": "使用 read 工具读取源文件，省略路径时交互选择" },
+        { "step": 2, "name": "提取核心", "description": "提取核心论点、关键发现、实践建议、决策要点" },
+        { "step": 3, "name": "去重合并", "description": "扫描 docs/ 检查是否已有同主题文档，执行重叠检测" },
+        { "step": 4, "name": "结构化输出", "description": "按文档类型使用对应模板输出" },
+        { "step": 5, "name": "注入 Frontmatter", "description": "添加 title/type/status/source_files/seealso 等 frontmatter 字段" },
+        { "step": 6, "name": "写入验证", "description": "使用 write 工具写入后立即 read 验证前 10 行中文可读性" },
+        { "step": 7, "name": "更新索引", "description": "更新 docs/INDEX.md 和 registry/asset-index.md" }
+      ],
+      "safetyConstraints": [
+        "不修改原始报告（reports/raw/ 只读）",
+        "保留原始报告完整副本",
+        "多份报告涉及同一主题时合并去重",
+        "使用 write 工具写入，禁止 PowerShell 写入含中文内容"
+      ]
+    },
+    {
+      "name": "update-registry",
+      "description": "扫描仓库所有 .md 文件，提取 frontmatter 信息，生成/更新资产索引和决策日志。支持全量重建和一致性校验。",
+      "filePath": ".claude/commands/update-registry.md",
+      "status": "active",
+      "requiresApproval": false,
+      "parameters": [
+        {
+          "name": "--full",
+          "type": "flag",
+          "default": false,
+          "description": "从零重建所有索引文件，忽略缓存；适用于大规模结构变更后"
+        },
+        {
+          "name": "--check-only",
+          "type": "flag",
+          "default": false,
+          "description": "仅检测异常，不写入任何文件；适用于 CI/预检"
+        }
+      ],
+      "processingSteps": [
+        { "step": 1, "name": "扫描文件", "description": "使用 Glob 扫描所有 .md 文件，排除 node_modules/.git/archive" },
+        { "step": 2, "name": "提取 Frontmatter", "description": "逐个读取文件前 20 行，提取 title/type/status/tags 等字段" },
+        { "step": 3, "name": "分类统计", "description": "按 type 和 status 分桶统计" },
+        { "step": 4, "name": "异常检测", "description": "检测缺少 frontmatter、断裂引用、孤儿文档、过期文档、重复文档" },
+        { "step": 5, "name": "写入索引", "description": "生成 registry/asset-index.md 和 registry/.tmp/scan-result.json" },
+        { "step": 6, "name": "输出摘要", "description": "终端显示扫描结果摘要" }
+      ],
+      "anomalyChecks": [
+        { "type": "no_frontmatter", "severity": "warning", "description": ".md 文件缺少 YAML frontmatter" },
+        { "type": "broken_source_files", "severity": "error", "description": "source_files 引用路径不存在" },
+        { "type": "orphan_doc", "severity": "warning", "description": "docs/ 文件无 source_files 且未被 INDEX.md 引用" },
+        { "type": "stale_doc", "severity": "info", "description": "updated 超过 90 天且 status: active" },
+        { "type": "duplicate_doc", "severity": "warning", "description": "同一 title 出现在多个文件中" },
+        { "type": "unindexed_file", "severity": "info", "description": "存在于目录但不在 asset-index.md 中" }
+      ],
+      "safetyConstraints": [
+        "不删除任何现有文件，索引文件为完全重写",
+        "--check-only 模式不写入任何文件",
+        "使用 write 工具写入，禁止 PowerShell 写入含中文内容",
+        "scan-result.json 写入 .tmp/ 目录"
+      ]
+    }
+  ]
+}

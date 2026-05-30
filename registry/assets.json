@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-05-30",
+  "templates": [
+    {
+      "path": "templates/ui-workflow/project-DESIGN.md",
+      "name": "UI 项目设计系统模板",
+      "type": "template",
+      "purpose": "UI 项目 DESIGN.md 模板 — 品牌与视觉、组件清单、页面结构、动画规范、响应式断点",
+      "status": "draft",
+      "sourceDoc": "docs/ui-workflow/workflow-standard.md",
+      "variables": ["项目名称", "项目类型", "技术栈", "设计系统"]
+    },
+    {
+      "path": "templates/ui-workflow/gsap-checklist.md",
+      "name": "GSAP Motion 实现检查清单",
+      "type": "template",
+      "purpose": "GSAP 动画实现 6 阶段检查清单 — 规划、选型、实现、优化、可访问性、测试",
+      "status": "draft",
+      "sourceDoc": "docs/ui-workflow/gsap-motion-guide.md",
+      "variables": []
+    }
+  ],
+  "agents": [
+    {
+      "path": ".claude/agents/repo-cartographer.md",
+      "name": "repo-cartographer",
+      "purpose": "扫描仓库结构，生成文件索引，标记孤儿文件，建议分类",
+      "triggers": ["仓库文件增长超过 30 个", "季度盘点", "/inventory 命令"],
+      "model": "sonnet",
+      "tools": ["Read", "Glob", "Grep", "Write", "Edit"],
+      "status": "active",
+      "outputSchema": "registry/.tmp/scan-result.json"
+    },
+    {
+      "path": ".claude/agents/report-distiller.md",
+      "name": "report-distiller",
+      "purpose": "将 reports/raw/ 原始调研提炼为 docs/ 长期知识文档",
+      "triggers": ["新报告入库", "季度知识整理", "/distill-report 命令"],
+      "model": "sonnet",
+      "tools": ["Read", "Write", "Edit", "Glob", "Grep"],
+      "status": "active",
+      "outputSchema": "registry/.tmp/distill-result.json"
+    },
+    {
+      "path": ".claude/agents/workflow-orchestrator.md",
+      "name": "workflow-orchestrator",
+      "purpose": "主控 Agent，负责任务拆分、DAG 编排、Agent 派发、状态汇总与错误恢复",
+      "triggers": ["/restructure-repo 命令", "复合指令涉及多个 Agent"],
+      "model": "sonnet",
+      "tools": ["Agent", "Read", "Write", "Glob", "Grep"],
+      "status": "active",
+      "outputSchema": "registry/.tmp/orchestrator-state.json"
+    }
+  ],
+  "commands": [
+    {
+      "path": ".claude/commands/restructure-repo.md",
+      "name": "restructure-repo",
+      "purpose": "执行仓库重组：创建目录、移动文件、更新索引、生成日志",
+      "parameters": [
+        { "name": "--dry-run", "type": "flag", "default": false, "description": "模拟执行，不实际移动文件" },
+        { "name": "--phase", "type": "int", "default": 0, "description": "从指定阶段开始执行（1-5），0 为全部" }
+      ],
+      "requiresApproval": true,
+      "status": "active"
+    },
+    {
+      "path": ".claude/commands/distill-report.md",
+      "name": "distill-report",
+      "purpose": "将原始调研报告提炼为长期知识文档",
+      "parameters": [
+        { "name": "source_path", "type": "string", "default": null, "description": "原始报告路径，省略时交互选择" },
+        { "name": "--type", "type": "enum", "default": null, "description": "输出文档类型：reference | workflow | principle，省略时自动检测" }
+      ],
+      "requiresApproval": false,
+      "status": "active"
+    },
+    {
+      "path": ".claude/commands/update-registry.md",
+      "name": "update-registry",
+      "purpose": "扫描仓库，更新 registry/ 资产索引和决策日志",
+      "parameters": [
+        { "name": "--full", "type": "flag", "default": false, "description": "从零重建所有索引" },
+        { "name": "--check-only", "type": "flag", "default": false, "description": "仅检测异常，不写入任何文件" }
+      ],
+      "requiresApproval": false,
+      "status": "active"
+    }
+  ],
+  "rules": [
+    {
+      "path": ".claude/rules/file-organization.md",
+      "name": "file-organization",
+      "purpose": "强制文件按目标架构存放，定义路由规则、命名规范、禁止模式",
+      "triggers": ["创建新文件", "移动文件到新目录", "在根目录创建 .md"],
+      "enforcement": "blocking",
+      "status": "active"
+    },
+    {
+      "path": ".claude/rules/no-secrets.md",
+      "name": "no-secrets",
+      "purpose": "检测并阻断 API key、token、凭证等敏感信息写入仓库",
+      "triggers": ["写入任何文件"],
+      "enforcement": "blocking",
+      "status": "active"
+    },
+    {
+      "path": ".claude/rules/research-reporting.md",
+      "name": "research-reporting",
+      "purpose": "规范 reports/ 目录下的原始调研报告格式 — frontmatter、命名、来源追踪",
+      "triggers": ["在 reports/ 目录创建或编辑 .md 文件"],
+      "enforcement": "blocking",
+      "status": "active"
+    }
+  ],
+  "skills": [
+    {
+      "path": ".claude/skills/my-claude-repo-manager/SKILL.md",
+      "name": "my-claude-repo-manager",
+      "purpose": "仓库索引管理、分类、归档与统计",
+      "triggers": ["scan repo", "update index", "archive old docs", "repo statistics", "扫描仓库", "更新索引", "归档旧文档", "仓库统计"],
+      "coreCapabilities": ["Scan & Classify", "Update Registry Indexes", "Archive Stale Docs", "Generate Statistics"],
+      "integratesWith": ["repo-cartographer (agent)", "update-registry (command)"],
+      "status": "active"
+    },
+    {
+      "path": ".claude/skills/report-to-doc-distiller/",
+      "name": "report-to-doc-distiller",
+      "purpose": "将 reports/raw/ 原始报告提炼为 docs/ 长期知识文档",
+      "triggers": ["distill report", "提炼报告", "convert report", "转换报告"],
+      "coreCapabilities": [],
+      "integratesWith": ["report-distiller (agent)", "distill-report (command)"],
+      "status": "draft",
+      "note": "目录已创建，SKILL.md 待编写"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-05-30",
+  "tags": [
+    {
+      "name": "claude-code",
+      "description": "Claude Code CLI 工具相关 — 配置、Skills、Agents、Commands、Rules",
+      "applicableTypes": ["reference", "workflow", "config", "agent", "command", "rule", "skill", "report"]
+    },
+    {
+      "name": "heroui",
+      "description": "HeroUI 开源组件库相关 — 使用指南、组件参考、配置",
+      "applicableTypes": ["reference", "template", "report"]
+    },
+    {
+      "name": "heroui-pro",
+      "description": "HeroUI Pro 商业组件库相关 — Pro 组件、hpsetup 认证、移植指南",
+      "applicableTypes": ["reference", "template", "report"]
+    },
+    {
+      "name": "ui-workflow",
+      "description": "UI/UX 开发工作流相关 — 设计系统、Skill 组合、工具路由",
+      "applicableTypes": ["reference", "workflow", "template"]
+    },
+    {
+      "name": "gsap",
+      "description": "GSAP 动画库相关 — ScrollTrigger、Timeline、性能优化、React 集成",
+      "applicableTypes": ["reference", "template"]
+    },
+    {
+      "name": "animation",
+      "description": "动画与动效相关 — GSAP、Framer Motion、CSS 动画、ScrollTrigger",
+      "applicableTypes": ["reference", "template"]
+    },
+    {
+      "name": "skill",
+      "description": "Claude Code Skill 相关 — Skill 安装、配置、组合配方、问题排查",
+      "applicableTypes": ["reference", "config", "report"]
+    },
+    {
+      "name": "agent",
+      "description": "Claude Code Agent 相关 — Agent 定义、触发条件、执行协议",
+      "applicableTypes": ["config"]
+    },
+    {
+      "name": "command",
+      "description": "Claude Code Command 相关 — 自定义命令定义、参数、流程",
+      "applicableTypes": ["config"]
+    },
+    {
+      "name": "rule",
+      "description": "Claude Code Rule 相关 — 行为规范、安全约束、格式要求",
+      "applicableTypes": ["config"]
+    },
+    {
+      "name": "template",
+      "description": "可复制模板相关 — 项目模板、检查清单、配置模板",
+      "applicableTypes": ["template"]
+    },
+    {
+      "name": "diagram",
+      "description": "画图与可视化相关 — Mermaid、Excalidraw、draw.io、tldraw、baoyu-diagram",
+      "applicableTypes": ["reference"]
+    },
+    {
+      "name": "reference",
+      "description": "参考文档标记 — API 速查、组件清单、工具对比、配置指南",
+      "applicableTypes": ["reference"]
+    },
+    {
+      "name": "workflow",
+      "description": "工作流标准标记 — 流程定义、决策门、Skill 触发映射",
+      "applicableTypes": ["workflow"]
+    },
+    {
+      "name": "report",
+      "description": "调研报告标记 — 原始调研、踩坑记录、验证报告",
+      "applicableTypes": ["report"]
+    },
+    {
+      "name": "registry",
+      "description": "注册索引标记 — 文件索引、资产清单、决策日志",
+      "applicableTypes": ["registry"]
+    },
+    {
+      "name": "config",
+      "description": "配置文件标记 — CLAUDE.md、settings、hooks、环境变量",
+      "applicableTypes": ["config"]
+    },
+    {
+      "name": "security",
+      "description": "安全相关 — secrets 检测、凭证保护、安全扫描",
+      "applicableTypes": ["rule", "config"]
+    }
+  ]
+}

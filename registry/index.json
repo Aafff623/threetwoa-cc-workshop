@@ -1,0 +1,506 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-05-30",
+  "entries": [
+    {
+      "path": "00-START-HERE.md",
+      "title": "快速入门",
+      "type": "registry",
+      "status": "active",
+      "tags": ["registry", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "README.md",
+      "title": "my-claude 仓库说明",
+      "type": "registry",
+      "status": "active",
+      "tags": ["registry", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/INDEX.md",
+      "title": "文档索引",
+      "type": "registry",
+      "status": "active",
+      "tags": ["registry"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/claude-code/feature-handbook.md",
+      "title": "Claude Code 全功能谱系与工作流手册",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "workflow", "reference"],
+      "created": "2026-05-27",
+      "modified": "2026-05-30",
+      "sourceFiles": ["Claude Code 全功能谱系与工作流手册.md"]
+    },
+    {
+      "path": "docs/claude-code/skills-inventory.md",
+      "title": "Claude Code 本机 Skills 全量汇总",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "skill", "reference"],
+      "created": "2026-05-27",
+      "modified": "2026-05-30",
+      "sourceFiles": ["Claude Code 本机 Skills 全量汇总.md"]
+    },
+    {
+      "path": "docs/claude-code/diagram-skills-reference.md",
+      "title": "Claude Code 画图技能参考",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "diagram", "reference"],
+      "created": "2026-05-26",
+      "modified": "2026-05-30",
+      "sourceFiles": ["Claude Code 画图技能调研报告.md"]
+    },
+    {
+      "path": "docs/claude-code/codegraph-gitnexus-guide.md",
+      "title": "CodeGraph · GitNexus · grill-me 三工具详解",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "reference"],
+      "created": "2026-05-27",
+      "modified": "2026-05-30",
+      "sourceFiles": ["CodeGraph_GitNexus_grill-me_三工具详解.md"]
+    },
+    {
+      "path": "docs/claude-code/claude-mem-guide.md",
+      "title": "Claude-Mem 安装与使用指南",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "reference"],
+      "created": "2026-05-28",
+      "modified": "2026-05-30",
+      "sourceFiles": ["Claude-Mem 安装与验证 Handoff.md", "Claude-Mem 配置与使用指南.md"]
+    },
+    {
+      "path": "docs/heroui/component-reference.md",
+      "title": "HeroUI Pro v3 组件参考与移植指南",
+      "type": "reference",
+      "status": "active",
+      "tags": ["heroui", "heroui-pro", "reference"],
+      "created": "2026-05-29",
+      "modified": "2026-05-30",
+      "sourceFiles": ["heroui-pro-v3-component-reference-and-porting-guide.md"]
+    },
+    {
+      "path": "docs/heroui/porting-guide.md",
+      "title": "HeroUI Pro v3 移植指南",
+      "type": "reference",
+      "status": "active",
+      "tags": ["heroui", "heroui-pro", "reference"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["reports/raw/heroui/porting-guide-and-pitfalls.md"]
+    },
+    {
+      "path": "docs/heroui/template-architecture.md",
+      "title": "HeroUI Pro v3 模板架构精要",
+      "type": "reference",
+      "status": "active",
+      "tags": ["heroui", "heroui-pro", "reference"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["reports/raw/heroui/template-architecture.md"]
+    },
+    {
+      "path": "docs/ui-workflow/workflow-standard.md",
+      "title": "UI Workflow 标准",
+      "type": "workflow",
+      "status": "active",
+      "tags": ["ui-workflow", "workflow"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["source-03-ui-workflow-standard.md"]
+    },
+    {
+      "path": "docs/ui-workflow/tool-routing-cheatsheet.md",
+      "title": "UI 工具路由速查表",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "reference"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["source-04-ui-tool-routing-cheatsheet.md"]
+    },
+    {
+      "path": "docs/ui-workflow/gsap-motion-guide.md",
+      "title": "GSAP Motion 层分析",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "gsap", "animation", "reference"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["source-05-gsap-motion-layer-analysis.md"]
+    },
+    {
+      "path": "docs/ui-workflow/anti-pattern-cookbook.md",
+      "title": "UI 工作流反模式手册",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "gsap", "heroui-pro", "reference"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["reports/raw/ui-workflow/02-ui-skill-deep-research.md", "reports/raw/ui-workflow/04-ui-tool-routing-cheatsheet.md", "reports/raw/ui-workflow/01-ui-skill-stack-installation-report.md"]
+    },
+    {
+      "path": "docs/ui-workflow/diagram-tool-selection-guide.md",
+      "title": "画图工具选择指南",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "diagram", "reference"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["reports/raw/ui-workflow/02-ui-skill-deep-research.md", "docs/claude-code/diagram-skills-reference.md"]
+    },
+    {
+      "path": "docs/ui-workflow/skill-combination-recipes.md",
+      "title": "Skill 组合配方",
+      "type": "workflow",
+      "status": "active",
+      "tags": ["ui-workflow", "skill", "workflow"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["reports/raw/ui-workflow/02-ui-skill-deep-research.md", "reports/raw/ui-workflow/04-ui-tool-routing-cheatsheet.md"]
+    },
+    {
+      "path": "docs/ui-workflow/windows-skill-gap-workaround.md",
+      "title": "Windows 技能空目录问题与规避方案",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "skill", "reference"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["reports/raw/ui-workflow/01-ui-skill-stack-installation-report.md"]
+    },
+    {
+      "path": ".claude/CLAUDE.md",
+      "title": "Claude 个性化风格配置方案",
+      "type": "config",
+      "status": "active",
+      "tags": ["claude-code", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/README.md",
+      "title": ".claude/ 配置说明",
+      "type": "config",
+      "status": "active",
+      "tags": ["claude-code", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/settings.example.json",
+      "title": "配置示例模板",
+      "type": "config",
+      "status": "active",
+      "tags": ["claude-code", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/agents/repo-cartographer.md",
+      "title": "仓库地图绘制员",
+      "type": "agent",
+      "status": "active",
+      "tags": ["claude-code", "agent", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/agents/report-distiller.md",
+      "title": "报告提炼员",
+      "type": "agent",
+      "status": "active",
+      "tags": ["claude-code", "agent", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/agents/workflow-orchestrator.md",
+      "title": "工作流编排器",
+      "type": "agent",
+      "status": "active",
+      "tags": ["claude-code", "agent", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/commands/restructure-repo.md",
+      "title": "仓库重组命令",
+      "type": "command",
+      "status": "active",
+      "tags": ["claude-code", "command", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/commands/distill-report.md",
+      "title": "报告提炼命令",
+      "type": "command",
+      "status": "active",
+      "tags": ["claude-code", "command", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/commands/update-registry.md",
+      "title": "更新注册表命令",
+      "type": "command",
+      "status": "active",
+      "tags": ["claude-code", "command", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/rules/file-organization.md",
+      "title": "文件组织规范",
+      "type": "rule",
+      "status": "active",
+      "tags": ["claude-code", "rule", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/rules/no-secrets.md",
+      "title": "禁止泄露 secrets",
+      "type": "rule",
+      "status": "active",
+      "tags": ["claude-code", "rule", "security", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/rules/research-reporting.md",
+      "title": "调研报告规范",
+      "type": "rule",
+      "status": "active",
+      "tags": ["claude-code", "rule", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".claude/skills/my-claude-repo-manager/SKILL.md",
+      "title": "仓库管理技能",
+      "type": "skill",
+      "status": "active",
+      "tags": ["claude-code", "skill", "config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "templates/ui-workflow/gsap-checklist.md",
+      "title": "GSAP Motion 实现检查清单",
+      "type": "template",
+      "status": "draft",
+      "tags": ["ui-workflow", "gsap", "template"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["docs/ui-workflow/gsap-motion-guide.md"]
+    },
+    {
+      "path": "templates/ui-workflow/project-DESIGN.md",
+      "title": "UI 项目设计系统模板",
+      "type": "template",
+      "status": "draft",
+      "tags": ["ui-workflow", "template"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": ["docs/ui-workflow/workflow-standard.md"]
+    },
+    {
+      "path": "reports/raw/heroui/template-architecture.md",
+      "title": "HeroUI Pro v3 模板架构原始分析",
+      "type": "report",
+      "status": "archived",
+      "tags": ["heroui", "heroui-pro", "report"],
+      "created": "2026-05-29",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reports/raw/heroui/porting-guide-and-pitfalls.md",
+      "title": "HeroUI Pro 移植踩坑记录",
+      "type": "report",
+      "status": "archived",
+      "tags": ["heroui", "heroui-pro", "report"],
+      "created": "2026-05-29",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reports/raw/ui-workflow/01-ui-skill-stack-installation-report.md",
+      "title": "UI Skill Stack 安装报告",
+      "type": "report",
+      "status": "archived",
+      "tags": ["ui-workflow", "skill", "report"],
+      "created": "2026-05-26",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reports/raw/ui-workflow/02-ui-skill-deep-research.md",
+      "title": "UI Skill 深度调研原始笔记",
+      "type": "report",
+      "status": "archived",
+      "tags": ["ui-workflow", "skill", "report"],
+      "created": "2026-05-26",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "registry/asset-index.md",
+      "title": "资产索引",
+      "type": "registry",
+      "status": "active",
+      "tags": ["registry"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "registry/decision-log.md",
+      "title": "决策记录",
+      "type": "registry",
+      "status": "active",
+      "tags": ["registry"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/00-executive-summary.md",
+      "title": "重组执行摘要",
+      "type": "report",
+      "status": "active",
+      "tags": ["report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/01-current-inventory.md",
+      "title": "仓库盘点",
+      "type": "report",
+      "status": "active",
+      "tags": ["report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/02-target-architecture.md",
+      "title": "目标架构",
+      "type": "report",
+      "status": "active",
+      "tags": ["report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/03-claude-ecosystem-plan.md",
+      "title": "Claude 生态设计",
+      "type": "report",
+      "status": "active",
+      "tags": ["claude-code", "report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/04-ui-workflow-architecture.md",
+      "title": "UI 工作流架构",
+      "type": "report",
+      "status": "active",
+      "tags": ["ui-workflow", "report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/05-migration-plan.md",
+      "title": "迁移计划",
+      "type": "report",
+      "status": "active",
+      "tags": ["report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/06-execution-log.md",
+      "title": "迁移执行日志",
+      "type": "report",
+      "status": "active",
+      "tags": ["report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/07-verification-report.md",
+      "title": "迁移验证报告",
+      "type": "report",
+      "status": "active",
+      "tags": ["report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/08-multi-agent-collaboration-proposal.md",
+      "title": "多 Agent 协作分工方案",
+      "type": "report",
+      "status": "draft",
+      "tags": ["claude-code", "agent", "report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "reorg/09-continuation-status.md",
+      "title": "会话延续状态报告",
+      "type": "report",
+      "status": "active",
+      "tags": ["report"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": ".gitignore",
+      "title": "Git 忽略规则",
+      "type": "config",
+      "status": "active",
+      "tags": ["config"],
+      "created": "2026-05-30",
+      "modified": "2026-05-30",
+      "sourceFiles": []
+    }
+  ]
+}

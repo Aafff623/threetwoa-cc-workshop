@@ -1,0 +1,31 @@
+{
+  "name": "heroui-dashboard-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3003",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gravity-ui/icons": "^2.18.0",
+    "@heroui-pro/react": "1.0.0-beta.4",
+    "@heroui/react": "3.0.3",
+    "@heroui/styles": "3.0.3",
+    "framer-motion": "^11.0.0",
+    "next": "16.2.3",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "recharts": "3.8.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.2.2",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@10.33.0"
+}

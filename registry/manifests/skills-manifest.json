@@ -1,0 +1,130 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-05-30",
+  "skills": [
+    {
+      "name": "my-claude-repo-manager",
+      "description": "仓库索引管理、分类、归档与统计技能。确保 registry 始终反映仓库真实状态。",
+      "filePath": ".claude/skills/my-claude-repo-manager/SKILL.md",
+      "triggerPhrases": [
+        "scan repo",
+        "update index",
+        "archive old docs",
+        "repo statistics",
+        "扫描仓库",
+        "更新索引",
+        "归档旧文档",
+        "仓库统计"
+      ],
+      "status": "active",
+      "coreCapabilities": [
+        "Scan & Classify — 递归扫描仓库，识别文件类型，标记未归类文件",
+        "Update Registry Indexes — 更新 asset-index.md、decision-log.md、scan-result.json",
+        "Archive Stale Docs — 检索过期文档，移动到 archive/ 并更新 status",
+        "Generate Statistics — 统计文件分布、活跃度，输出摘要到 decision-log.md"
+      ],
+      "integratesWith": {
+        "agents": ["repo-cartographer"],
+        "commands": ["update-registry"]
+      }
+    },
+    {
+      "name": "report-to-doc-distiller",
+      "description": "将 reports/raw/ 原始报告提炼为 docs/ 长期知识文档的技能。",
+      "filePath": ".claude/skills/report-to-doc-distiller/SKILL.md",
+      "triggerPhrases": [
+        "distill report",
+        "提炼报告",
+        "convert report",
+        "转换报告",
+        "整理调研"
+      ],
+      "status": "draft",
+      "note": "目录已创建，SKILL.md 待编写",
+      "coreCapabilities": [],
+      "integratesWith": {
+        "agents": ["report-distiller"],
+        "commands": ["distill-report"]
+      }
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "description": "UI/UX 设计智能。67 种风格、96 色板、57 字体配对、25 图表、13 技术栈。外部 Skill，安装于 ~/.claude/skills/。",
+      "filePath": "C:/Users/Lenovo/.claude/skills/ui-ux-pro-max/SKILL.md",
+      "triggerPhrases": [
+        "plan ui",
+        "build ui",
+        "design ui",
+        "create landing page",
+        "design dashboard",
+        "check ui/ux code",
+        "improve ui",
+        "optimize ui",
+        "refactor ui",
+        "fix ui"
+      ],
+      "status": "external",
+      "source": "https://github.com/nicekid1/claude-code-design-skill"
+    },
+    {
+      "name": "design-taste-frontend",
+      "description": "Anti-slop frontend skill for landing pages, portfolios, and redesigns。本地 Skill，位于 .claude/skills/taste-skill/。",
+      "filePath": ".claude/skills/taste-skill/SKILL.md",
+      "triggerPhrases": [
+        "design landing page",
+        "anti-slop",
+        "frontend redesign",
+        "premium frontend"
+      ],
+      "status": "external",
+      "source": "local"
+    },
+    {
+      "name": "heroui-react-pro",
+      "description": "HeroUI Pro React component library。外部 Skill，安装于 ~/.opencode/skill/heroui-react-pro/。",
+      "filePath": "C:/Users/Lenovo/.opencode/skill/heroui-react-pro/SKILL.md",
+      "triggerPhrases": [
+        "heroui pro",
+        "heroui-pro react",
+        "Pro component",
+        "Pro MCP",
+        "chart component",
+        "DataGrid",
+        "Kanban",
+        "area chart"
+      ],
+      "status": "external",
+      "source": "https://heroui.pro"
+    },
+    {
+      "name": "heroui-native-pro",
+      "description": "HeroUI Pro Native component library for React Native。外部 Skill，安装于 ~/.opencode/skill/heroui-native-pro/。",
+      "filePath": "C:/Users/Lenovo/.opencode/skill/heroui-native-pro/SKILL.md",
+      "triggerPhrases": [
+        "heroui native pro",
+        "heroui-native-pro",
+        "Native Pro component",
+        "Native Pro MCP",
+        "React Native",
+        "Uniwind"
+      ],
+      "status": "external",
+      "source": "https://heroui.pro"
+    },
+    {
+      "name": "heroui-pro-design-taste",
+      "description": "Design taste profile for the HeroUI design system。78 条设计原则。外部 Skill，安装于 ~/.opencode/skill/heroui-pro-design-taste/。",
+      "filePath": "C:/Users/Lenovo/.opencode/skill/heroui-pro-design-taste/SKILL.md",
+      "triggerPhrases": [
+        "heroui design",
+        "heroui spacing",
+        "heroui typography",
+        "heroui color",
+        "heroui card",
+        "heroui button"
+      ],
+      "status": "external",
+      "source": "https://heroui.pro"
+    }
+  ]
+}

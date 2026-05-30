@@ -1,0 +1,10 @@
+/* HeroUI 样式铁律：import 顺序不可变 */
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "@heroui-pro/react/css"; /* 必须最后，在 @custom-variant 之后 */
+
+@source "../**/*.{ts,tsx}";
+
+body {
+  background-color: var(--background);
+}

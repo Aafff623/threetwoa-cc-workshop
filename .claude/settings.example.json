@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "model": "sonnet",
+  "effortLevel": "high",
+  "outputStyle": "Explanatory",
+  "alwaysThinkingEnabled": true,
+  "showThinkingSummaries": true,
+
+  "permissions": {
+    "allow": [
+      "Edit(*)",
+      "Write(*)",
+      "Bash(npm run *)",
+      "Bash(git *)",
+      "Bash(python *)",
+      "Bash(node *)",
+      "WebFetch(domain:*)",
+      "WebSearch",
+      "Agent(*)"
+    ],
+    "ask": [
+      "Bash(rm *)",
+      "Bash(git push *)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)",
+      "Bash(docker *)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(./secrets/**)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+
+  "autoMode": {
+    "environment": [
+      "Trusted local development environment"
+    ]
+  },
+
+  "mcpServers": {
+    "codegraph": {
+      "command": "npx",
+      "args": ["-y", "@codegraph/mcp-server"]
+    }
+  }
+}
