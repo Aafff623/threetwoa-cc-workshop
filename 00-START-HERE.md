@@ -1,6 +1,6 @@
 # 00-START-HERE
 
-欢迎来到 my-claude — 你的 Claude 生态资产仓库。
+欢迎来到 threetwoa-cc-workshop — 你的 Claude Code 配置工坊 & 知识资产库。
 
 ## 这是什么？
 
