@@ -92,7 +92,7 @@ max_parallel = min(CPU核心数 - 1, 4)   // 上限 4
   "agent": "repo-cartographer",
   "action": "scan",
   "params": {
-    "path": "D:\\OneDrive\\Desktop\\my-claude",
+    "path": "D:\\OneDrive\\Desktop\\threetwoa-cc-workshop",
     "full_scan": true
   },
   "depends_on": [],

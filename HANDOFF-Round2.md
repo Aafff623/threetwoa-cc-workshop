@@ -245,7 +245,7 @@ owner: threetwoa
 
 agents/commands/rules/skills 都是 Markdown 定义，未经过 Claude Code 实际调用验证。建议：
 
-1. 在 Claude Code 中打开 my-claude 项目
+1. 在 Claude Code 中打开 threetwoa-cc-workshop 项目
 2. 试用 `/distill-report`、`/restructure-repo`、`/update-registry` 命令
 3. 观察是否按预期触发对应 Agent/Skill
 

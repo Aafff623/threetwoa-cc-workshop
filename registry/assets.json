@@ -125,14 +125,13 @@
       "status": "active"
     },
     {
-      "path": ".claude/skills/report-to-doc-distiller/",
+      "path": ".claude/skills/report-to-doc-distiller/SKILL.md",
       "name": "report-to-doc-distiller",
       "purpose": "将 reports/raw/ 原始报告提炼为 docs/ 长期知识文档",
-      "triggers": ["distill report", "提炼报告", "convert report", "转换报告"],
-      "coreCapabilities": [],
+      "triggers": ["distill report", "提炼报告", "convert report", "转换报告", "整理调研"],
+      "coreCapabilities": ["Read Source", "Extract Core Insights", "Check Duplicates in docs/", "Write Structured Doc", "Update Indexes"],
       "integratesWith": ["report-distiller (agent)", "distill-report (command)"],
-      "status": "draft",
-      "note": "目录已创建，SKILL.md 待编写"
+      "status": "active"
     }
   ]
 }

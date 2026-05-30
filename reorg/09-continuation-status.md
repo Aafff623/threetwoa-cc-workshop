@@ -3,7 +3,7 @@ title: "会话延续状态报告"
 type: report
 status: active
 date: 2026-05-30
-scope: "my-claude 仓库重构 — 第二轮执行（接续 API Error 中断）"
+scope: "threetwoa-cc-workshop 仓库重构 — 第二轮执行（接续 API Error 中断）"
 author: threetwoa
 ---
 

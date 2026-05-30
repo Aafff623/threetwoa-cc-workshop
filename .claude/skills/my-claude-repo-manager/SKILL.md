@@ -27,7 +27,7 @@ user-invocable: true
 
 ## 描述
 
-对 my-claude 仓库进行全面扫描、分类、索引更新、过期归档与统计生成。确保 registry 始终反映仓库真实状态，是 repo-cartographer agent 的核心操作技能。
+对 threetwoa-cc-workshop 仓库进行全面扫描、分类、索引更新、过期归档与统计生成。确保 registry 始终反映仓库真实状态，是 repo-cartographer agent 的核心操作技能。
 
 ## 核心能力
 

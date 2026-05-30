@@ -282,11 +282,11 @@ GPT: 最终审批
 | 已有初版但质量不明 | Iterative Refinement | 多轮审查保证质量 |
 | 紧急热修复 | GPT 直接指导 CC | 跳过审查，快速响应 |
 
-## 8. my-claude 仓库在三层模型中的角色
+## 8. threetwoa-cc-workshop 仓库在三层模型中的角色
 
 ### 8.1 作为知识中枢
 
-my-claude 仓库不是单纯的代码仓库，而是三层协作的**知识基础设施**：
+threetwoa-cc-workshop 仓库不是单纯的代码仓库，而是三层协作的**知识基础设施**：
 
 - **Spec 存储**：`docs/specs/` 存放 GPT 撰写的 Spec
 - **工作报告**：`docs/reports/` 存放 CC 生成的研究报告

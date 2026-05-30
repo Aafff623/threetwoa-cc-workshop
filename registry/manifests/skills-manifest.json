@@ -39,9 +39,14 @@
         "转换报告",
         "整理调研"
       ],
-      "status": "draft",
-      "note": "目录已创建，SKILL.md 待编写",
-      "coreCapabilities": [],
+      "status": "active",
+      "coreCapabilities": [
+        "Read Source — 读取原始报告，提取元信息，支持 Markdown/纯文本/JSON",
+        "Extract Core Insights — 识别关键结论、去重、过滤临时性描述",
+        "Check Duplicates in docs/ — title 相似度 > 0.8 视为重复，合并到已有文档",
+        "Write Structured Doc — 输出含 frontmatter 的结构化文档到 docs/ 目录",
+        "Update Indexes — 同步更新 registry/asset-index.md 和 registry/decision-log.md"
+      ],
       "integratesWith": {
         "agents": ["report-distiller"],
         "commands": ["distill-report"]

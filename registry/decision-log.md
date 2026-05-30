@@ -12,7 +12,7 @@ owner: threetwoa
 
 ### 决策 1: 仓库定位
 
-**问题**: my-claude 仓库内容有价值但结构分散，如何长期维护？
+**问题**: threetwoa-cc-workshop 仓库内容有价值但结构分散，如何长期维护？
 
 **决策**: 将其重构成 **AI Workflow Operating System** — Claude 生态资产仓库。
 
