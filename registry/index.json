@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-05-30",
+  "lastUpdated": "2026-05-31",
   "entries": [
     {
       "path": "00-START-HERE.md",
@@ -59,8 +59,8 @@
       "status": "active",
       "tags": ["claude-code", "diagram", "reference"],
       "created": "2026-05-26",
-      "modified": "2026-05-30",
-      "sourceFiles": ["Claude Code 画图技能调研报告.md"]
+      "modified": "2026-05-31",
+      "sourceFiles": ["archive/2026-05-30/Claude Code 画图技能调研报告.md"]
     },
     {
       "path": "docs/claude-code/codegraph-gitnexus-guide.md",
@@ -69,8 +69,8 @@
       "status": "active",
       "tags": ["claude-code", "reference"],
       "created": "2026-05-27",
-      "modified": "2026-05-30",
-      "sourceFiles": ["CodeGraph_GitNexus_grill-me_三工具详解.md"]
+      "modified": "2026-05-31",
+      "sourceFiles": ["archive/2026-05-30/CodeGraph_GitNexus_grill-me_三工具详解.md"]
     },
     {
       "path": "docs/claude-code/claude-mem-guide.md",
@@ -184,13 +184,173 @@
     },
     {
       "path": ".claude/CLAUDE.md",
-      "title": "Claude 个性化风格配置方案",
+      "title": "Hermes Engineering Threetwoa ClaudeCode Config v4.0",
       "type": "config",
       "status": "active",
-      "tags": ["claude-code", "config"],
+      "tags": ["claude-code", "config", "v4.0", "operating-contract"],
       "created": "2026-05-30",
-      "modified": "2026-05-30",
-      "sourceFiles": []
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/CLAUDE.md"]
+    },
+    {
+      "path": "archive/2026-05-31/CLAUDE.md-v1.0.md",
+      "title": "CLAUDE.md v1.0 备份",
+      "type": "archive",
+      "status": "archived",
+      "tags": ["claude-code", "config", "v1.0", "archive"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": [".claude/CLAUDE.md"]
+    },
+    {
+      "path": "docs/README.md",
+      "title": "Docs 知识库说明",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "docs", "reference"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/README.md"]
+    },
+    {
+      "path": "docs/methodology/superpowers.md",
+      "title": "Superpowers 软件工程默认主推进范式",
+      "type": "methodology",
+      "status": "active",
+      "tags": ["claude-code", "superpowers", "methodology"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/methodology/superpowers.md"]
+    },
+    {
+      "path": "docs/methodology/matt-pocock-skills.md",
+      "title": "Matt Pocock Skills 外部工程判断工具箱",
+      "type": "methodology",
+      "status": "active",
+      "tags": ["claude-code", "matt-pocock-skills", "methodology"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/methodology/matt-pocock-skills.md"]
+    },
+    {
+      "path": "docs/routing/command-routing.md",
+      "title": "Command Routing 完整命令路由表",
+      "type": "routing",
+      "status": "active",
+      "tags": ["claude-code", "routing", "command"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/routing/command-routing.md"]
+    },
+    {
+      "path": "docs/routing/file-routing-standard.md",
+      "title": "File Routing Standard 文件落点规范",
+      "type": "routing",
+      "status": "active",
+      "tags": ["claude-code", "routing", "file-routing"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/routing/file-routing-standard.md"]
+    },
+    {
+      "path": "docs/routing/tool-routing.md",
+      "title": "Tool Routing 工具路由速查表",
+      "type": "routing",
+      "status": "active",
+      "tags": ["claude-code", "routing", "tool"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/routing/tool-routing.md"]
+    },
+    {
+      "path": "docs/routing/ui-workflow-routing.md",
+      "title": "UI Workflow Routing UI 工序路由",
+      "type": "routing",
+      "status": "active",
+      "tags": ["claude-code", "routing", "ui-workflow"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/routing/ui-workflow-routing.md"]
+    },
+    {
+      "path": "docs/templates/decision-needed-report.md",
+      "title": "Decision Needed 停机报告模板",
+      "type": "template",
+      "status": "active",
+      "tags": ["claude-code", "template", "report"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/templates/decision-needed-report.md"]
+    },
+    {
+      "path": "docs/templates/gpt-decision-material.md",
+      "title": "GPT Decision Material 决策材料模板",
+      "type": "template",
+      "status": "active",
+      "tags": ["claude-code", "template", "gpt"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/templates/gpt-decision-material.md"]
+    },
+    {
+      "path": "docs/templates/codex-review-material.md",
+      "title": "Codex Review Material 审查材料模板",
+      "type": "template",
+      "status": "active",
+      "tags": ["claude-code", "template", "codex"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/templates/codex-review-material.md"]
+    },
+    {
+      "path": "docs/templates/handoff-report.md",
+      "title": "Handoff Report 交接报告模板",
+      "type": "template",
+      "status": "active",
+      "tags": ["claude-code", "template", "handoff"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/templates/handoff-report.md"]
+    },
+    {
+      "path": "docs/templates/prd.md",
+      "title": "PRD 产品需求文档模板",
+      "type": "template",
+      "status": "active",
+      "tags": ["claude-code", "template", "prd"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/templates/prd.md"]
+    },
+    {
+      "path": "docs/templates/design.md",
+      "title": "Design 设计文档模板",
+      "type": "template",
+      "status": "active",
+      "tags": ["claude-code", "template", "design"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/templates/design.md"]
+    },
+    {
+      "path": "docs/style/style-layer.md",
+      "title": "Style Layer 语言风格与颜文字规范",
+      "type": "style",
+      "status": "active",
+      "tags": ["claude-code", "style", "language"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/style/style-layer.md"]
+    },
+    {
+      "path": "docs/environment/windows-wsl2.md",
+      "title": "Windows / WSL2 环境规则",
+      "type": "environment",
+      "status": "active",
+      "tags": ["claude-code", "environment", "windows", "wsl2"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": ["~/.claude/Docs/environment/windows-wsl2.md"]
     },
     {
       "path": ".claude/README.md",
@@ -510,6 +670,86 @@
       "tags": ["config"],
       "created": "2026-05-30",
       "modified": "2026-05-30",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/claude-code/mcp-servers-guide.md",
+      "title": "Claude Code MCP 服务器指南",
+      "type": "reference",
+      "status": "active",
+      "tags": ["claude-code", "mcp", "reference"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/claude-code/tri-layer-workflow.md",
+      "title": "GPT→Claude Code→Codex 三层协作模型",
+      "type": "workflow",
+      "status": "active",
+      "tags": ["claude-code", "workflow", "collaboration"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/ui-workflow/mkdirs-business-layer.md",
+      "title": "UI Workflow L0: Mkdirs 业务底盘",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "mkdirs", "reference"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/ui-workflow/motionsites-inspiration-layer.md",
+      "title": "UI Workflow L1: MotionSites 灵感层",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "motionsites", "reference"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/ui-workflow/taste-judgment-layer.md",
+      "title": "UI Workflow L2: Taste 判断层",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "taste", "reference"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/ui-workflow/aceternity-motion-layer.md",
+      "title": "UI Workflow L3: Aceternity 动效层",
+      "type": "reference",
+      "status": "active",
+      "tags": ["ui-workflow", "aceternity", "reference"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": []
+    },
+    {
+      "path": "registry/manifests/skills-manifest.json",
+      "title": "Skills 分类清单 Manifest",
+      "type": "registry",
+      "status": "active",
+      "tags": ["registry", "skills", "manifest"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
+      "sourceFiles": []
+    },
+    {
+      "path": "docs/research/xcrawl_light_research.md",
+      "title": "XCrawl 轻量调研报告",
+      "type": "reference",
+      "status": "active",
+      "tags": ["research", "xcrawl", "reference"],
+      "created": "2026-05-31",
+      "modified": "2026-05-31",
       "sourceFiles": []
     }
   ]

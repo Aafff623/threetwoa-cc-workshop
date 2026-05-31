@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "lastUpdated": "2026-05-30",
+  "version": "1.1",
+  "lastUpdated": "2026-05-31",
   "skills": [
     {
       "name": "my-claude-repo-manager",
@@ -17,6 +17,7 @@
         "仓库统计"
       ],
       "status": "active",
+      "category": "仓库本地",
       "coreCapabilities": [
         "Scan & Classify — 递归扫描仓库，识别文件类型，标记未归类文件",
         "Update Registry Indexes — 更新 asset-index.md、decision-log.md、scan-result.json",
@@ -40,6 +41,7 @@
         "整理调研"
       ],
       "status": "active",
+      "category": "仓库本地",
       "coreCapabilities": [
         "Read Source — 读取原始报告，提取元信息，支持 Markdown/纯文本/JSON",
         "Extract Core Insights — 识别关键结论、去重、过滤临时性描述",
@@ -69,6 +71,7 @@
         "fix ui"
       ],
       "status": "external",
+      "category": "UI/UX 设计",
       "source": "https://github.com/nicekid1/claude-code-design-skill"
     },
     {
@@ -82,6 +85,7 @@
         "premium frontend"
       ],
       "status": "external",
+      "category": "UI/UX 设计",
       "source": "local"
     },
     {
@@ -99,6 +103,7 @@
         "area chart"
       ],
       "status": "external",
+      "category": "HeroUI 生态",
       "source": "https://heroui.pro"
     },
     {
@@ -114,6 +119,7 @@
         "Uniwind"
       ],
       "status": "external",
+      "category": "HeroUI 生态",
       "source": "https://heroui.pro"
     },
     {
@@ -129,7 +135,1018 @@
         "heroui button"
       ],
       "status": "external",
+      "category": "HeroUI 生态",
       "source": "https://heroui.pro"
+    },
+    {
+      "name": "diagnose",
+      "description": "严谨诊断循环：复现→最小化→假设→验证→修复→回归测试。用于硬 bug 和性能回归。",
+      "filePath": "~/.claude/skills/diagnose/SKILL.md",
+      "triggerPhrases": [
+        "diagnose this",
+        "debug this",
+        "something is broken",
+        "performance regression",
+        "trace this bug"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "tdd",
+      "description": "测试驱动开发：红-绿-重构循环。用于构建功能或修复 bug。",
+      "filePath": "~/.claude/skills/tdd/SKILL.md",
+      "triggerPhrases": [
+        "TDD",
+        "red-green-refactor",
+        "integration tests",
+        "test-first",
+        "test-driven development"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "git-commit",
+      "description": "分析 diff 生成 Conventional Commits 规范提交信息，支持自动检测 type/scope 和智能 staging。",
+      "filePath": "~/.claude/skills/git-commit/SKILL.md",
+      "triggerPhrases": [
+        "commit",
+        "git commit",
+        "/commit",
+        "conventional commit"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "description": "设置 Claude Code hooks 阻止危险 git 操作（push, reset --hard, clean, branch -D 等）。",
+      "filePath": "~/.claude/skills/git-guardrails-claude-code/SKILL.md",
+      "triggerPhrases": [
+        "block git push",
+        "prevent destructive git",
+        "git safety hooks",
+        "block dangerous git"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "gitnexus-exploring",
+      "description": "探索代码库架构、追踪执行流、理解陌生代码区域。",
+      "filePath": "~/.claude/skills/gitnexus-exploring/SKILL.md",
+      "triggerPhrases": [
+        "how does X work",
+        "trace execution",
+        "show me auth flow",
+        "explore codebase"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "gitnexus-debugging",
+      "description": "调试 bug、追踪错误来源、定位失败原因。",
+      "filePath": "~/.claude/skills/gitnexus-debugging/SKILL.md",
+      "triggerPhrases": [
+        "why is X failing",
+        "trace this bug",
+        "where does error come from"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "gitnexus-impact-analysis",
+      "description": "变更影响分析：改什么会炸，什么依赖这个。",
+      "filePath": "~/.claude/skills/gitnexus-impact-analysis/SKILL.md",
+      "triggerPhrases": [
+        "is it safe to change X",
+        "what depends on this",
+        "what will break"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "gitnexus-refactoring",
+      "description": "安全重构：重命名、提取、拆分、移动代码。",
+      "filePath": "~/.claude/skills/gitnexus-refactoring/SKILL.md",
+      "triggerPhrases": [
+        "rename function",
+        "extract module",
+        "refactor class",
+        "move file"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "gitnexus-pr-review",
+      "description": "PR 审查：变更内容、合并风险、测试覆盖检查。",
+      "filePath": "~/.claude/skills/gitnexus-pr-review/SKILL.md",
+      "triggerPhrases": [
+        "review this PR",
+        "what does PR change",
+        "is PR safe to merge"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "gitnexus-cli",
+      "description": "GitNexus CLI 操作：索引仓库、生成 wiki、清理索引、列出已索引仓库。",
+      "filePath": "~/.claude/skills/gitnexus-cli/SKILL.md",
+      "triggerPhrases": [
+        "index repo",
+        "reanalyze",
+        "generate wiki",
+        "list repos",
+        "clean index"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "gitnexus-guide",
+      "description": "GitNexus 本身的使用指南、工具列表、MCP 资源、图谱 schema。",
+      "filePath": "~/.claude/skills/gitnexus-guide/SKILL.md",
+      "triggerPhrases": [
+        "what GitNexus tools",
+        "how to use GitNexus",
+        "GitNexus schema"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "grill-me",
+      "description": "无情拷问计划/设计，直到决策树每个分支都清晰。",
+      "filePath": "~/.claude/skills/grill-me/SKILL.md",
+      "triggerPhrases": [
+        "grill me",
+        "stress-test plan",
+        "拷问我的设计"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "grill-with-docs",
+      "description": "针对现有领域模型和文档进行拷问，同步更新 CONTEXT.md/ADR。",
+      "filePath": "~/.claude/skills/grill-with-docs/SKILL.md",
+      "triggerPhrases": [
+        "grill with docs",
+        "stress-test against domain model"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "handoff",
+      "description": "将当前对话压缩为 handoff 文档，供其他 agent 接力。",
+      "filePath": "~/.claude/skills/handoff/SKILL.md",
+      "triggerPhrases": [
+        "handoff",
+        "compact conversation",
+        "交接"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "to-prd",
+      "description": "将当前对话上下文转为 PRD 并发布到 issue tracker。",
+      "filePath": "~/.claude/skills/to-prd/SKILL.md",
+      "triggerPhrases": [
+        "create PRD",
+        "turn into PRD",
+        "生成 PRD"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "to-issues",
+      "description": "将计划/PRD 拆分为可独立执行的 issue（tracer-bullet 垂直切片）。",
+      "filePath": "~/.claude/skills/to-issues/SKILL.md",
+      "triggerPhrases": [
+        "convert plan to issues",
+        "create tickets",
+        "break down work"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "triage",
+      "description": "基于 triage 角色的 issue 状态机管理。",
+      "filePath": "~/.claude/skills/triage/SKILL.md",
+      "triggerPhrases": [
+        "triage issues",
+        "create issue",
+        "review bugs",
+        "manage workflow"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "review",
+      "description": "双轴审查：Standards（代码规范）+ Spec（是否符合需求）。",
+      "filePath": "~/.claude/skills/review/SKILL.md",
+      "triggerPhrases": [
+        "review since X",
+        "review branch",
+        "review PR"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "release-skills",
+      "description": "通用发布工作流：自动检测版本文件、changelog、GitHub Release。",
+      "filePath": "~/.claude/skills/release-skills/SKILL.md",
+      "triggerPhrases": [
+        "release",
+        "发布",
+        "bump version",
+        "new version",
+        "GitHub Release"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "prototype",
+      "description": "快速原型：终端 app 或多种 UI 变体切换。",
+      "filePath": "~/.claude/skills/prototype/SKILL.md",
+      "triggerPhrases": [
+        "prototype this",
+        "mock up UI",
+        "try designs",
+        "let me play"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "description": "基于 CONTEXT.md 和 ADR 发现架构深化机会，使代码库更可测试和 AI 可导航。",
+      "filePath": "~/.claude/skills/improve-codebase-architecture/SKILL.md",
+      "triggerPhrases": [
+        "improve architecture",
+        "refactor opportunities",
+        "make testable",
+        "consolidate modules"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "description": "将测试文件从 `as` 类型断言迁移到 @total-typescript/shoehorn。",
+      "filePath": "~/.claude/skills/migrate-to-shoehorn/SKILL.md",
+      "triggerPhrases": [
+        "shoehorn",
+        "replace `as` in tests",
+        "partial test data"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "setup-pre-commit",
+      "description": "配置 Husky + lint-staged + typecheck + test 的 pre-commit 流水线。",
+      "filePath": "~/.claude/skills/setup-pre-commit/SKILL.md",
+      "triggerPhrases": [
+        "pre-commit hooks",
+        "Husky",
+        "lint-staged",
+        "提交前检查"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "readme-polish",
+      "description": "分析项目结构 → 生成 Banner 图 → 按统一规范组装完整 README.md。",
+      "filePath": "~/.claude/skills/readme-polish/SKILL.md",
+      "triggerPhrases": [
+        "帮我写 README",
+        "打磨 README",
+        "生成项目首页"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "scaffold-exercises",
+      "description": "创建练习目录结构（section/problem/solution/explainer），通过 lint。",
+      "filePath": "~/.claude/skills/scaffold-exercises/SKILL.md",
+      "triggerPhrases": [
+        "scaffold exercises",
+        "create exercise stubs",
+        "set up course section"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "skill-creator",
+      "description": "创建/修改/优化 skills，运行 evals，benchmark 性能，优化触发描述。",
+      "filePath": "~/.claude/skills/skill-creator/SKILL.md",
+      "triggerPhrases": [
+        "create skill",
+        "edit skill",
+        "optimize skill",
+        "run evals",
+        "benchmark skill"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "caveman",
+      "description": "ultra-compressed 通信模式，token 消耗降低约 75%，保持技术准确性。",
+      "filePath": "~/.claude/skills/caveman/SKILL.md",
+      "triggerPhrases": [
+        "caveman mode",
+        "talk like caveman",
+        "less tokens",
+        "be brief"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "soulmate",
+      "description": "温暖人性化沟通模式，gentle/warm/radiant 三档，保持技术准确性。",
+      "filePath": "~/.claude/skills/soulmate/SKILL.md",
+      "triggerPhrases": [
+        "soulmate mode",
+        "talk like a human",
+        "be warm",
+        "more emotion"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "vision-analysis",
+      "description": "使用 MiniMax vision MCP 工具分析/描述/提取图像信息。",
+      "filePath": "~/.claude/skills/vision-analysis/SKILL.md",
+      "triggerPhrases": [
+        "analyze image",
+        "describe image",
+        "OCR",
+        "extract text from image",
+        "review screenshot"
+      ],
+      "status": "active",
+      "category": "MiniMax / 多媒体"
+    },
+    {
+      "name": "agent-browser",
+      "description": "浏览器自动化 CLI，支持导航/填表/截图/数据提取/测试 web app。",
+      "filePath": "~/.claude/skills/agent-browser/SKILL.md",
+      "triggerPhrases": [
+        "open a website",
+        "fill out a form",
+        "take a screenshot",
+        "scrape data",
+        "test web app",
+        "automate browser"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "deep-research",
+      "description": "深度研究：扇出搜索、获取来源、对抗性验证、合成引用报告。",
+      "filePath": "~/.claude/skills/deep-research/SKILL.md",
+      "triggerPhrases": [
+        "deep research",
+        "research report",
+        "multi-source research"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "writing-dna",
+      "description": "个人写作风格指纹提取与复用工具，去除 AI 味。",
+      "filePath": "~/.claude/skills/writing-dna/SKILL.md",
+      "triggerPhrases": [
+        "writing DNA",
+        "my writing style",
+        "remove AI tone"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "zhihu-search",
+      "description": "搜索知乎站内内容，返回结构化结果（标题/链接/作者/摘要）。",
+      "filePath": "~/.claude/skills/zhihu-search/SKILL.md",
+      "triggerPhrases": [
+        "知乎",
+        "知乎搜索",
+        "zhihu"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "obsidian-vault",
+      "description": "Obsidian 笔记库搜索、创建、管理（支持 wikilink 和索引笔记）。",
+      "filePath": "~/.claude/skills/obsidian-vault/SKILL.md",
+      "triggerPhrases": [
+        "obsidian",
+        "find notes",
+        "create note",
+        "笔记"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "ppt-master",
+      "description": "多格式 SVG 内容生成系统，PDF/DOCX/URL/Markdown → SVG → PPTX。",
+      "filePath": "~/.claude/skills/ppt-master/SKILL.md",
+      "triggerPhrases": [
+        "create PPT",
+        "make presentation",
+        "生成PPT",
+        "做PPT",
+        "制作演示文稿"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "claude-api",
+      "description": "构建、调试和优化 Claude API / Anthropic SDK 应用，支持 prompt caching。",
+      "filePath": "~/.claude/skills/claude-api/SKILL.md",
+      "triggerPhrases": [
+        "Claude API",
+        "Anthropic SDK",
+        "prompt caching",
+        "cache hit rate"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "update-config",
+      "description": "通过 settings.json 配置 Claude Code harness，包括 hooks、权限、环境变量。",
+      "filePath": "~/.claude/skills/update-config/SKILL.md",
+      "triggerPhrases": [
+        "update config",
+        "configure settings",
+        "allow npm commands",
+        "add permission",
+        "set env var"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "keybindings-help",
+      "description": "自定义键盘快捷键、重新绑定按键、修改 ~/.claude/keybindings.json。",
+      "filePath": "~/.claude/skills/keybindings-help/SKILL.md",
+      "triggerPhrases": [
+        "rebind keys",
+        "customize keybindings",
+        "change submit key",
+        "keyboard shortcuts"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "verify",
+      "description": "运行应用并观察行为，验证代码变更是否生效。",
+      "filePath": "~/.claude/skills/verify/SKILL.md",
+      "triggerPhrases": [
+        "verify",
+        "confirm a fix works",
+        "test manually",
+        "validate changes"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "code-review",
+      "description": "审查 diff 的正确性 bug 和复用/简化/效率优化。",
+      "filePath": "~/.claude/skills/code-review/SKILL.md",
+      "triggerPhrases": [
+        "code review",
+        "review diff",
+        "find bugs"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "simplify",
+      "description": "审查变更代码的复用、简化、效率和高层次优化，并应用修复。",
+      "filePath": "~/.claude/skills/simplify/SKILL.md",
+      "triggerPhrases": [
+        "simplify",
+        "refactor",
+        "clean up code"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "fewer-permission-prompts",
+      "description": "扫描 transcript 中的只读 Bash/MCP 调用，添加 allowlist 减少权限提示。",
+      "filePath": "~/.claude/skills/fewer-permission-prompts/SKILL.md",
+      "triggerPhrases": [
+        "fewer prompts",
+        "reduce permission prompts",
+        "allowlist"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "loop",
+      "description": "在循环间隔上运行 prompt 或 slash 命令。",
+      "filePath": "~/.claude/skills/loop/SKILL.md",
+      "triggerPhrases": [
+        "loop",
+        "recurring task",
+        "poll every",
+        "run repeatedly"
+      ],
+      "status": "active",
+      "category": "系统/配置"
+    },
+    {
+      "name": "run",
+      "description": "启动并驱动项目应用以查看变更效果。",
+      "filePath": "~/.claude/skills/run/SKILL.md",
+      "triggerPhrases": [
+        "run",
+        "start",
+        "screenshot the app",
+        "launch app"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "init",
+      "description": "初始化新的 CLAUDE.md 文件及代码库文档。",
+      "filePath": "~/.claude/skills/init/SKILL.md",
+      "triggerPhrases": [
+        "init CLAUDE.md",
+        "setup codebase docs",
+        "initialize project docs"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "security-review",
+      "description": "安全审查：检查代码中的安全漏洞和风险。",
+      "filePath": "~/.claude/skills/security-review/SKILL.md",
+      "triggerPhrases": [
+        "security review",
+        "audit security",
+        "check vulnerabilities"
+      ],
+      "status": "active",
+      "category": "Git / 开发工具"
+    },
+    {
+      "name": "anysearch",
+      "description": "实时搜索引擎，支持 23 个垂直领域、并行批量搜索、URL 内容提取。",
+      "filePath": "~/.claude/skills/anysearch/SKILL.md",
+      "triggerPhrases": [
+        "search",
+        "web search",
+        "搜索",
+        "网页搜索"
+      ],
+      "status": "active",
+      "category": "Claude Code 内置"
+    },
+    {
+      "name": "baoyu-image-gen",
+      "description": "多 provider AI 生图底层（OpenAI/Google/阿里/字节等 11 家），支持文生图/参考图/批量生成。",
+      "filePath": "~/.claude/skills/baoyu-image-gen/SKILL.md",
+      "triggerPhrases": [
+        "generate image",
+        "create image",
+        "draw image",
+        "生成图片"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-translate",
+      "description": "三模式翻译（快速/标准/精翻），支持术语一致性和 EXTEND.md 词汇表。",
+      "filePath": "~/.claude/skills/baoyu-translate/SKILL.md",
+      "triggerPhrases": [
+        "translate",
+        "翻译",
+        "精翻",
+        "本地化",
+        "localize"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-diagram",
+      "description": "深色科技风 SVG 图表（slate-900 + cyan/emerald），9 种类型，矢量无损。",
+      "filePath": "~/.claude/skills/baoyu-diagram/SKILL.md",
+      "triggerPhrases": [
+        "diagram",
+        "flowchart",
+        "sequence",
+        "architecture",
+        "画个图",
+        "画一个架构图"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-infographic",
+      "description": "21 布局 × 22 风格信息图，完整内容分析→结构化→图像生成工作流。",
+      "filePath": "~/.claude/skills/baoyu-infographic/SKILL.md",
+      "triggerPhrases": [
+        "infographic",
+        "信息图",
+        "visual summary",
+        "可视化",
+        "高密度信息大图"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-slide-deck",
+      "description": "PPT/幻灯片生成，从内容到单页图片。",
+      "filePath": "~/.claude/skills/baoyu-slide-deck/SKILL.md",
+      "triggerPhrases": [
+        "create slides",
+        "presentation",
+        "PPT",
+        "slide deck",
+        "演示文稿"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-cover-image",
+      "description": "文章封面图生成，5 维度 × 11 色板 × 7 渲染风格。",
+      "filePath": "~/.claude/skills/baoyu-cover-image/SKILL.md",
+      "triggerPhrases": [
+        "generate cover",
+        "create cover",
+        "article cover",
+        "封面"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-article-illustrator",
+      "description": "分析文章结构，识别需配图位置，Type×Style×Palette 三维度生成插图。",
+      "filePath": "~/.claude/skills/baoyu-article-illustrator/SKILL.md",
+      "triggerPhrases": [
+        "illustrate article",
+        "add images",
+        "generate images for article",
+        "为文章配图"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-comic",
+      "description": "知识漫画生成，多艺术风格，面板布局，批量生成。",
+      "filePath": "~/.claude/skills/baoyu-comic/SKILL.md",
+      "triggerPhrases": [
+        "知识漫画",
+        "教育漫画",
+        "biography comic",
+        "tutorial comic"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-xhs-images",
+      "description": "社交媒体信息图卡片（1-10 张），12 风格 × 8 布局 × 3 色板。",
+      "filePath": "~/.claude/skills/baoyu-xhs-images/SKILL.md",
+      "triggerPhrases": [
+        "小红书图片",
+        "小红书种草",
+        "小绿书",
+        "image cards",
+        "图片卡片"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-format-markdown",
+      "description": "Markdown 格式化，frontmatter/标题/摘要/列表/代码块。",
+      "filePath": "~/.claude/skills/baoyu-format-markdown/SKILL.md",
+      "triggerPhrases": [
+        "format markdown",
+        "beautify article",
+        "add formatting",
+        "美化文章"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-markdown-to-html",
+      "description": "Markdown 转样式化 HTML，支持代码高亮/数学/Mermaid/PlantUML/微信外链转底部引用。",
+      "filePath": "~/.claude/skills/baoyu-markdown-to-html/SKILL.md",
+      "triggerPhrases": [
+        "markdown to html",
+        "convert md to html",
+        "md 转 html",
+        "微信外链转底部引用"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-url-to-markdown",
+      "description": "任意 URL 转 Markdown（支持 X/Twitter/YouTube/Hacker News）。",
+      "filePath": "~/.claude/skills/baoyu-url-to-markdown/SKILL.md",
+      "triggerPhrases": [
+        "save webpage",
+        "url to markdown",
+        "保存网页"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-post-to-wechat",
+      "description": "微信公众号文章/贴图发布（API 或 Chrome CDP）。",
+      "filePath": "~/.claude/skills/baoyu-post-to-wechat/SKILL.md",
+      "triggerPhrases": [
+        "发布公众号",
+        "post to wechat",
+        "微信公众号",
+        "贴图/图文/文章"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-post-to-weibo",
+      "description": "微博发布（文字/图片/视频/头条文章）。",
+      "filePath": "~/.claude/skills/baoyu-post-to-weibo/SKILL.md",
+      "triggerPhrases": [
+        "post to Weibo",
+        "发微博",
+        "发布微博",
+        "微博头条文章"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-post-to-x",
+      "description": "X/Twitter 发布（含长文 X Articles）。",
+      "filePath": "~/.claude/skills/baoyu-post-to-x/SKILL.md",
+      "triggerPhrases": [
+        "post to X",
+        "tweet",
+        "publish to Twitter",
+        "share on X"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-wechat-summary",
+      "description": "微信群聊总结（正常/毒舌版），维护群组历史和用户画像。",
+      "filePath": "~/.claude/skills/baoyu-wechat-summary/SKILL.md",
+      "triggerPhrases": [
+        "总结群聊",
+        "群聊精华",
+        "summarize group chat",
+        "群聊摘要"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-youtube-transcript",
+      "description": "YouTube 字幕/封面下载，支持翻译/章节/说话人识别。",
+      "filePath": "~/.claude/skills/baoyu-youtube-transcript/SKILL.md",
+      "triggerPhrases": [
+        "get YouTube transcript",
+        "download subtitles",
+        "YouTube字幕",
+        "视频封面"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-compress-image",
+      "description": "图片压缩转 WebP/PNG，自动选择工具。",
+      "filePath": "~/.claude/skills/baoyu-compress-image/SKILL.md",
+      "triggerPhrases": [
+        "compress image",
+        "optimize image",
+        "convert to webp",
+        "压缩图片"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-electron-extract",
+      "description": "Electron 应用 .asar 解包提取源码，支持 source map 还原和 Prettier 格式化。",
+      "filePath": "~/.claude/skills/baoyu-electron-extract/SKILL.md",
+      "triggerPhrases": [
+        "extract Electron",
+        "decompile Electron",
+        "提取 .asar",
+        "看 Electron 源码"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-danger-gemini-web",
+      "description": "Gemini Web API 逆向，文生图/图生文/多轮对话。",
+      "filePath": "~/.claude/skills/baoyu-danger-gemini-web/SKILL.md",
+      "triggerPhrases": [
+        "generate image with Gemini",
+        "Gemini text generation"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "baoyu-danger-x-to-markdown",
+      "description": "X/Twitter 推文/文章转 Markdown（YAML frontmatter）。",
+      "filePath": "~/.claude/skills/baoyu-danger-x-to-markdown/SKILL.md",
+      "triggerPhrases": [
+        "X to markdown",
+        "tweet to markdown",
+        "save tweet"
+      ],
+      "status": "active",
+      "category": "内容创作"
+    },
+    {
+      "name": "minimax-docx",
+      "description": "创建/编辑 Word 文档（.docx），支持中国公文格式标准（GB/T 9704-2012）。",
+      "filePath": "~/.claude/plugins/marketplaces/minimax-skills/minimax-docx/SKILL.md",
+      "triggerPhrases": [
+        "docx",
+        "Word",
+        "文档",
+        "公文"
+      ],
+      "status": "active",
+      "category": "MiniMax / 多媒体"
+    },
+    {
+      "name": "minimax-xlsx",
+      "description": "打开/创建/读取/分析/编辑 Excel 表格，支持公式/透视/财务格式化。",
+      "filePath": "~/.claude/plugins/marketplaces/minimax-skills/minimax-xlsx/SKILL.md",
+      "triggerPhrases": [
+        "Excel",
+        "xlsx",
+        "spreadsheet",
+        "csv",
+        "表格",
+        "财务模型"
+      ],
+      "status": "active",
+      "category": "MiniMax / 多媒体"
+    },
+    {
+      "name": "minimax-pdf",
+      "description": "创建精美 PDF（报告/简历/提案）、填写 PDF 表单、重新格式化现有文档。",
+      "filePath": "~/.claude/plugins/marketplaces/minimax-skills/minimax-pdf/SKILL.md",
+      "triggerPhrases": [
+        "PDF",
+        "生成报告",
+        "填写表单",
+        "精美文档"
+      ],
+      "status": "active",
+      "category": "MiniMax / 多媒体"
+    },
+    {
+      "name": "minimax-music-gen",
+      "description": "MiniMax 音乐生成，支持歌词转歌曲和场景背景音乐。",
+      "filePath": "~/.claude/plugins/marketplaces/minimax-skills/minimax-music-gen/SKILL.md",
+      "triggerPhrases": [
+        "音乐生成",
+        "AI作曲",
+        "music generation",
+        "generate music"
+      ],
+      "status": "active",
+      "category": "MiniMax / 多媒体"
+    },
+    {
+      "name": "mmx-cli",
+      "description": "MiniMax CLI 多模态工具（文本/图像/视频/语音/音乐/搜索/视觉）。",
+      "filePath": "~/.claude/plugins/marketplaces/minimax-skills/mmx-cli/SKILL.md",
+      "triggerPhrases": [
+        "mmx",
+        "MiniMax CLI",
+        "多模态工具"
+      ],
+      "status": "active",
+      "category": "MiniMax / 多媒体"
+    },
+    {
+      "name": "minimax-multimodal-toolkit",
+      "description": "通过 MiniMax AI 平台生成文本、图像、视频、语音、音乐。",
+      "filePath": "~/.claude/plugins/marketplaces/minimax-skills/minimax-multimodal-toolkit/SKILL.md",
+      "triggerPhrases": [
+        "MiniMax",
+        "multimodal",
+        "generate media"
+      ],
+      "status": "active",
+      "category": "MiniMax / 多媒体"
+    },
+    {
+      "name": "taste-skill",
+      "description": "前端设计品味 skill，反 sloppy 设计。",
+      "filePath": "~/.claude/skills/taste-skill/SKILL.md",
+      "triggerPhrases": [
+        "design taste",
+        "anti-slop",
+        "premium frontend"
+      ],
+      "status": "active",
+      "category": "UI/UX 设计"
+    },
+    {
+      "name": "brandkit",
+      "description": "品牌 kit 生成与管理。",
+      "filePath": "~/.claude/skills/brandkit/SKILL.md",
+      "triggerPhrases": [
+        "brand kit",
+        "brand identity",
+        "generate brand"
+      ],
+      "status": "active",
+      "category": "UI/UX 设计"
+    },
+    {
+      "name": "brutalist-skill",
+      "description": "粗野主义设计风格 skill。",
+      "filePath": "~/.claude/skills/brutalist-skill/SKILL.md",
+      "triggerPhrases": [
+        "brutalist",
+        "brutalism"
+      ],
+      "status": "active",
+      "category": "UI/UX 设计"
+    },
+    {
+      "name": "minimalist-skill",
+      "description": "极简主义设计风格：温暖单色、排版对比、扁平 bento 网格、柔和粉彩。",
+      "filePath": "~/.claude/skills/minimalist-skill/SKILL.md",
+      "triggerPhrases": [
+        "minimalist",
+        "clean design",
+        "editorial"
+      ],
+      "status": "active",
+      "category": "UI/UX 设计"
+    },
+    {
+      "name": "image-to-code-skill",
+      "description": "图像转代码 skill。",
+      "filePath": "~/.claude/skills/image-to-code-skill/SKILL.md",
+      "triggerPhrases": [
+        "image to code",
+        "convert image to code"
+      ],
+      "status": "active",
+      "category": "UI/UX 设计"
     }
   ]
 }

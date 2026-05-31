@@ -2,7 +2,7 @@
 title: "文档索引"
 type: registry
 status: active
-updated: 2026-05-30
+updated: 2026-05-31
 owner: threetwoa
 ---
 
@@ -14,6 +14,7 @@ owner: threetwoa
 |------|------|------|------|
 | [feature-handbook](claude-code/feature-handbook.md) | reference | active | 全功能谱系与工作流手册 |
 | [skills-inventory](claude-code/skills-inventory.md) | reference | active | 本机 Skills 全量汇总 |
+| [mcp-servers-guide](claude-code/mcp-servers-guide.md) | reference | active | MCP 服务器指南（11 个 MCP，5 个功能域） |
 | [diagram-skills-reference](claude-code/diagram-skills-reference.md) | reference | active | 画图技能参考 |
 | [codegraph-gitnexus-guide](claude-code/codegraph-gitnexus-guide.md) | reference | active | 三工具详解 |
 | [claude-mem-guide](claude-code/claude-mem-guide.md) | reference | active | Claude-Mem 安装与使用 |
@@ -25,6 +26,10 @@ owner: threetwoa
 |------|------|------|------|
 | [workflow-standard](ui-workflow/workflow-standard.md) | workflow | active | UI Workflow 标准 |
 | [tool-routing-cheatsheet](ui-workflow/tool-routing-cheatsheet.md) | reference | active | 工具路由速查表 |
+| [mkdirs-business-layer](ui-workflow/mkdirs-business-layer.md) | reference | active | L0 Mkdirs 业务底盘 |
+| [motionsites-inspiration-layer](ui-workflow/motionsites-inspiration-layer.md) | reference | active | L1 MotionSites 灵感层 |
+| [taste-judgment-layer](ui-workflow/taste-judgment-layer.md) | reference | active | L2 Taste 判断层 |
+| [aceternity-motion-layer](ui-workflow/aceternity-motion-layer.md) | reference | active | L3 Aceternity 动效层 |
 | [gsap-motion-guide](ui-workflow/gsap-motion-guide.md) | reference | active | GSAP Motion 层分析 |
 | [anti-pattern-cookbook](ui-workflow/anti-pattern-cookbook.md) | reference | active | 12 条反模式与纠正 |
 | [skill-combination-recipes](ui-workflow/skill-combination-recipes.md) | workflow | active | 5 个 Skill 组合配方 |
@@ -67,7 +72,57 @@ owner: threetwoa
 
 | 文档 | 类型 | 说明 |
 |------|------|------|
-| [CLAUDE.md](../.claude/CLAUDE.md) | config | 个性化风格配置 |
+| [CLAUDE.md](../.claude/CLAUDE.md) | config | **v4.0 操作系统合约** — 五层架构路由内核 |
+
+## Methodology（方法论）
+
+| 文档 | 类型 | 说明 |
+|------|------|------|
+| [superpowers](methodology/superpowers.md) | methodology | Superpowers 7 阶段 pipeline、skills、激活条件 |
+| [matt-pocock-skills](methodology/matt-pocock-skills.md) | methodology | Matt Pocock Skills 工具箱完整说明 |
+
+## Routing（路由规则）
+
+| 文档 | 类型 | 说明 |
+|------|------|------|
+| [command-routing](routing/command-routing.md) | routing | 完整命令路由表和场景解释 |
+| [file-routing-standard](routing/file-routing-standard.md) | routing | 全局和项目级文件落点规范 |
+| [tool-routing](routing/tool-routing.md) | routing | 工具路由详情（CodeGraph/Context7/搜索/图表） |
+| [ui-workflow-routing](routing/ui-workflow-routing.md) | routing | UI 工序路由详情（资产/页面/动效） |
+
+## Templates（可复制模板）
+
+| 文档 | 类型 | 说明 |
+|------|------|------|
+| [decision-needed-report](templates/decision-needed-report.md) | template | 停机报告模板 |
+| [gpt-decision-material](templates/gpt-decision-material.md) | template | GPT 决策材料模板 |
+| [codex-review-material](templates/codex-review-material.md) | template | Codex 审查材料模板 |
+| [handoff-report](templates/handoff-report.md) | template | 交接报告模板 |
+| [prd](templates/prd.md) | template | PRD 模板 |
+| [design](templates/design.md) | template | 设计文档模板 |
+
+## Style（语言风格）
+
+| 文档 | 类型 | 说明 |
+|------|------|------|
+| [style-layer](style/style-layer.md) | style | 语言风格与颜文字池 |
+
+## Environment（环境规则）
+
+| 文档 | 类型 | 说明 |
+|------|------|------|
+| [windows-wsl2](environment/windows-wsl2.md) | environment | Windows / WSL2 环境规则 |
+
+## Research（研究）
+
+| 文档 | 类型 | 说明 |
+|------|------|------|
+| [xcrawl-light-research](research/xcrawl_light_research.md) | reference | XCrawl 轻量调研报告 |
+
+## .claude 生态（Agents / Commands / Rules / Skills）
+
+| 文档 | 类型 | 说明 |
+|------|------|------|
 | [repo-cartographer](../.claude/agents/repo-cartographer.md) | agent | 仓库地图绘制员 |
 | [report-distiller](../.claude/agents/report-distiller.md) | agent | 报告提炼员 |
 | [workflow-orchestrator](../.claude/agents/workflow-orchestrator.md) | agent | 工作流编排器 |

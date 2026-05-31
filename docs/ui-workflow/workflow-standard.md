@@ -88,6 +88,15 @@ Claude Code 执行：
     → 创建 design-system/MASTER.md + pages/*.md
 ```
 
+### 资产分层参考
+
+本阶段涉及 L0→L3 层的协作：
+
+- **[Mkdirs 业务底盘](mkdirs-business-layer.md)**（L0）— 确保业务逻辑已跑通，再进入视觉设计
+- **[MotionSites 灵感层](motionsites-inspiration-layer.md)**（L1）— 浏览参考站点，收集视觉方向和动效灵感
+- **[Taste 判断层](taste-judgment-layer.md)**（L2）— 应用 Anti-Slop 原则，校准设计方向
+- **[Aceternity 动效层](aceternity-motion-layer.md)**（L3）— 预览可用的动效组件，提前评估移植可行性
+
 ### 决策门禁
 
 > **GPT 必须在设计方向获得批准后才进入实现。**
@@ -128,6 +137,14 @@ Step 3: 打磨
     → 验证对比度、间距、排版
     → 确保 AI slop 清除
 ```
+
+### 资产分层参考
+
+本阶段涉及 L2→L4 层的落地：
+
+- **[Taste 判断层](taste-judgment-layer.md)**（L2）— 执行前再次确认 Anti-Slop 规则已应用
+- **[Aceternity 动效层](aceternity-motion-layer.md)**（L3）— 从模板中移植动效组件到项目
+- **[Mkdirs 业务底盘](mkdirs-business-layer.md)**（L0）— 在已有业务底盘上叠加视觉层，不替换底层逻辑
 
 ### 质量门禁
 
