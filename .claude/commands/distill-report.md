@@ -81,7 +81,7 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 owner: threetwoa
 seealso:
-  - "docs/reference/related-topic.md"
+  - "docs/claude-code/related-topic.md"
 ---
 ```
 
@@ -104,13 +104,18 @@ seealso:
 
 ### 精炼文档路径规则
 
-| 类型 | 路径模板 |
-|------|---------|
-| reference | `docs/reference/{slug}.md` |
-| workflow | `docs/workflow/{slug}.md` |
-| principle | `docs/principle/{slug}.md` |
+输出目录按**源报告的主题**推断，与仓库 `docs/` 的实际分类结构一致：
+
+| 源路径前缀 | 目标目录 | 说明 |
+|-----------|---------|------|
+| `reports/raw/heroui/` | `docs/heroui/` | HeroUI 相关调研 |
+| `reports/raw/ui-workflow/` | `docs/ui-workflow/` | UI 工作流相关 |
+| `reports/raw/claude-code/` | `docs/claude-code/` | Claude Code 相关 |
+| 其他或无法推断 | `docs/`（根目录）或交互确认 | 通用知识 |
 
 `{slug}` 由标题生成：小写、中文保留、空格变 `-`、去除特殊字符。
+
+**注意**：`type` 字段（reference / workflow / principle）写入 frontmatter，不决定目录。目录由内容主题决定。
 
 ### 文档结构示例
 
@@ -125,7 +130,7 @@ created: 2025-01-15
 updated: 2025-01-15
 owner: threetwoa
 seealso:
-  - "docs/reference/heroui-component-patterns.md"
+  - "docs/heroui/heroui-component-patterns.md"
 ---
 
 ## Source Material

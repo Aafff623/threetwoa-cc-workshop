@@ -2,7 +2,7 @@
 title: "资产索引"
 type: registry
 status: active
-updated: 2026-05-30
+updated: 2026-05-31
 owner: threetwoa
 ---
 
@@ -14,17 +14,34 @@ owner: threetwoa
 |------|------|------|------|
 | `docs/claude-code/feature-handbook.md` | reference | Claude Code 全功能谱系与工作流手册.md | active |
 | `docs/claude-code/skills-inventory.md` | reference | Claude Code 本机 Skills 全量汇总.md | active |
+| `docs/claude-code/mcp-servers-guide.md` | reference | MCP 服务器指南（11 个 MCP，5 个功能域） | active |
 | `docs/claude-code/diagram-skills-reference.md` | reference | Claude Code 画图技能调研报告.md | active |
 | `docs/claude-code/codegraph-gitnexus-guide.md` | reference | CodeGraph_GitNexus_grill-me_三工具详解.md | active |
 | `docs/claude-code/claude-mem-guide.md` | reference | Claude-Mem 安装与验证 Handoff.md + 配置与使用指南.md | active |
+| `docs/claude-code/tri-layer-workflow.md` | workflow | GPT→Claude Code→Codex 三层协作模型 | active |
 | `docs/heroui/component-reference.md` | reference | heroui-pro-v3-component-reference-and-porting-guide.md | active |
+| `docs/heroui/porting-guide.md` | reference | HeroUI Pro v3 移植指南与 14 条踩坑记录 | active |
+| `docs/heroui/template-architecture.md` | reference | 四大模板架构精要 | active |
 | `docs/ui-workflow/workflow-standard.md` | workflow | archive/2026-05-30/source-03-ui-workflow-standard.md | active |
 | `docs/ui-workflow/tool-routing-cheatsheet.md` | reference | archive/2026-05-30/source-04-ui-tool-routing-cheatsheet.md | active |
+| `docs/ui-workflow/mkdirs-business-layer.md` | reference | Mkdirs 业务底盘分析 | active |
+| `docs/ui-workflow/motionsites-inspiration-layer.md` | reference | MotionSites 灵感层分析 | active |
+| `docs/ui-workflow/taste-judgment-layer.md` | reference | Taste/frontend-design 判断层分析 | active |
+| `docs/ui-workflow/aceternity-motion-layer.md` | reference | Aceternity 动效层分析 | active |
 | `docs/ui-workflow/gsap-motion-guide.md` | reference | archive/2026-05-30/source-05-gsap-motion-layer-analysis.md | active |
 | `docs/ui-workflow/anti-pattern-cookbook.md` | reference | archive/2026-05-30 source files | active |
 | `docs/ui-workflow/diagram-tool-selection-guide.md` | reference | archive/2026-05-30 source files | active |
 | `docs/ui-workflow/skill-combination-recipes.md` | workflow | archive/2026-05-30 source files | active |
 | `docs/ui-workflow/windows-skill-gap-workaround.md` | reference | archive/2026-05-30 source files | active |
+| `docs/methodology/superpowers.md` | methodology | Superpowers 7 阶段 pipeline | active |
+| `docs/methodology/matt-pocock-skills.md` | methodology | Matt Pocock Skills 工具箱完整说明 | active |
+| `docs/routing/command-routing.md` | routing | 完整命令路由表和场景解释 | active |
+| `docs/routing/file-routing-standard.md` | routing | 全局和项目级文件落点规范 | active |
+| `docs/routing/tool-routing.md` | routing | 工具路由详情 | active |
+| `docs/routing/ui-workflow-routing.md` | routing | UI 工序路由详情 | active |
+| `docs/style/style-layer.md` | style | 语言风格与颜文字池 | active |
+| `docs/environment/windows-wsl2.md` | environment | Windows / WSL2 环境规则 | active |
+| `docs/research/xcrawl_light_research.md` | reference | XCrawl 轻量调研报告 | active |
 
 ## 原始报告资产
 
@@ -65,20 +82,33 @@ owner: threetwoa
 | `.claude/rules/research-reporting.md` | rule | 调研报告规范 |
 | `.claude/rules/file-organization.md` | rule | 文件组织规范 |
 | `.claude/rules/no-secrets.md` | rule | 禁止泄露 secrets |
+| `.claude/skills/my-claude-repo-manager/SKILL.md` | skill | 仓库索引管理、分类、归档与统计 |
+| `.claude/skills/report-to-doc-distiller/SKILL.md` | skill | 报告提炼为长期知识文档 |
 
 ## 模板资产
 
 | 路径 | 类型 | 说明 |
 |------|------|------|
 | `templates/ui-workflow/project-DESIGN.md` | template | UI 项目设计系统模板 |
+| `templates/ui-workflow/project-CLAUDE.md` | template | UI 项目 CLAUDE.md 模板 |
+| `templates/ui-workflow/project-PRODUCT.md` | template | UI 项目 PRODUCT.md 模板 |
 | `templates/ui-workflow/gsap-checklist.md` | template | GSAP 实现检查清单 |
+| `templates/heroui/porting-checklist.md` | template | HeroUI 移植检查清单 |
+| `templates/heroui/dashboard-starter/` | template | HeroUI Dashboard 15 文件骨架（含 Next.js + Tailwind v4 配置） |
 
 ## 注册表资产
 
 | 路径 | 类型 | 说明 |
 |------|------|------|
+| `registry/index.json` | registry | 主索引（JSON） |
+| `registry/tags.json` | registry | 标签索引（JSON） |
+| `registry/assets.json` | registry | 资产清单（JSON） |
+| `registry/skill-registry.md` | registry | Skill 注册表（MD） |
+| `registry/workflow-registry.md` | registry | 工作流注册表（MD） |
 | `registry/decision-log.md` | log | 决策日志 |
 | `registry/asset-index.md` | registry | 资产索引（本文档） |
+| `registry/manifests/skills-manifest.json` | manifest | Skills 详细清单 |
+| `registry/manifests/commands-manifest.json` | manifest | Commands 详细清单 |
 
 ## 归档资产
 

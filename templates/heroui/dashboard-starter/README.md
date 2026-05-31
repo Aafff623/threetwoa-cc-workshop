@@ -18,8 +18,11 @@
 
 ## 快速开始
 
+> **前置条件**：`pnpm install` 需要有效的 HeroUI Pro Key 才能安装 `@heroui-pro/react`。
+> 如果你还没有 Key，跳过步骤 2 的认证，骨架仍可在只读模式下查看文件结构。
+
 ```bash
-# 1. 安装依赖
+# 1. 安装依赖（需要 HeroUI Pro Key，否则 @heroui-pro/react 会安装失败）
 pnpm install
 
 # 2. 认证 Pro 组件（需要 HP Key）
@@ -30,22 +33,30 @@ npx -y hpsetup@latest
 pnpm dev
 ```
 
+**验证状态**：本骨架的配置文件（tsconfig / next.config / postcss）已通过静态审查，与 Next.js 16 + Tailwind v4 官方规范一致。实际运行时验证需依赖 HeroUI Pro Key。
+
 ## 项目结构
 
 ```
-src/
-├── app/
-│   ├── (app)/              # Route Group（共享 Shell）
-│   │   ├── layout.tsx      # AppShell 注入
-│   │   └── page.tsx        # Dashboard 首页
-│   ├── globals.css         # HeroUI CSS 导入
-│   └── layout.tsx          # Root Layout
-├── components/
-│   ├── app-shell.tsx       # Shell 容器（AppLayout + Navbar + Sidebar）
-│   ├── dashboard-navbar.tsx
-│   ├── dashboard-sidebar.tsx
-│   └── icon-button.tsx     # 通用图标按钮
-└── nav-items.ts            # 导航路由定义
+├── next.config.ts          # Next.js 配置
+├── next-env.d.ts           # Next.js 类型声明
+├── package.json            # 依赖与脚本
+├── postcss.config.mjs      # Tailwind v4 PostCSS 配置
+├── README.md               # 本文件
+├── tsconfig.json           # TypeScript 配置
+└── src/
+    ├── app/
+    │   ├── (app)/          # Route Group（共享 Shell）
+    │   │   ├── layout.tsx  # AppShell 注入
+    │   │   └── page.tsx    # Dashboard 首页
+    │   ├── globals.css     # HeroUI CSS 导入
+    │   └── layout.tsx      # Root Layout
+    ├── components/
+    │   ├── app-shell.tsx   # Shell 容器（AppLayout + Navbar + Sidebar）
+    │   ├── dashboard-navbar.tsx
+    │   ├── dashboard-sidebar.tsx
+    │   └── icon-button.tsx # 通用图标按钮
+    └── nav-items.ts        # 导航路由定义
 ```
 
 ## 需要自定义的内容

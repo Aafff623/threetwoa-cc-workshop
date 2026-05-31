@@ -63,7 +63,8 @@ threetwoa-cc-workshop/
 ├── archive/                        # 历史归档
 ├── reorg/                          # 重组规划记录（过程文档）
 ├── 00-START-HERE.md                # 首次访问入口
-├── HANDOFF-Round2.md               # 会话交接文档
+├── archive/                         # 历史归档
+│   └── 2026-05-30/                  #   包含 HANDOFF-Round2.md 等历史文件
 └── README.md
 ```
 
@@ -211,7 +212,7 @@ reports/raw/ ──提炼──▶ docs/ ──索引──▶ registry/
 |------|------|
 | [00-START-HERE.md](00-START-HERE.md) | 首次访问入口 |
 | [docs/INDEX.md](docs/INDEX.md) | 全局文档索引 |
-| [HANDOFF-Round2.md](HANDOFF-Round2.md) | Round 2 会话交接文档 |
+| [HANDOFF-Round2.md](archive/2026-05-30/HANDOFF-Round2.md) | Round 2 会话交接文档 |
 | [.claude/CLAUDE.md](.claude/CLAUDE.md) | Agent 人格配置 |
 | [HeroUI 组件参考](docs/heroui/component-reference.md) | 55 组件 API + 已验证代码 |
 | [UI Workflow 标准](docs/ui-workflow/workflow-standard.md) | 完整工作流规范 |
