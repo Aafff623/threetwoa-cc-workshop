@@ -9,8 +9,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge" alt="status">
-  <img src="https://img.shields.io/badge/docs-16-blue?style=for-the-badge" alt="docs">
-  <img src="https://img.shields.io/badge/templates-16-orange?style=for-the-badge" alt="templates">
+  <img src="https://img.shields.io/badge/docs-37-blue?style=for-the-badge" alt="docs">
+  <img src="https://img.shields.io/badge/templates-6-orange?style=for-the-badge" alt="templates">
   <img src="https://img.shields.io/badge/.claude-11-lightgrey?style=for-the-badge" alt=".claude">
   <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="license">
 </p>
@@ -27,7 +27,7 @@
 - **三层工作流** — GPT(brain) → Claude Code(execute) → Codex(review)，各取所长
 - **.claude 生态** — 3 Agents + 3 Commands + 3 Rules + 2 Skills，Cargo-cult free，全是实打实的可执行配置
 - **HeroUI Pro 全覆盖** — 55 组件 API 参考 + 移植指南 + 模板架构 + Dashboard 骨架模板
-- **UI Workflow 系统** — 7 篇提炼文档 + 4 个项目模板，从选型到落地一站搞定
+- **UI Workflow 系统** — 11 篇提炼文档（L0→L6 全链路）+ 6 个项目模板，从选型到落地一站搞定
 - **安全基线** — no-secrets rule 扫描 11 种密钥模式，杜绝凭证入仓
 
 ## 🌱 Origin
@@ -38,6 +38,7 @@
 
 - **Round 1**：仓库结构重组，9 目录架构，9 篇 docs 提炼，.claude/ 骨架搭建
 - **Round 2**：骨架填充（agents/commands/rules 从 40 行扩到 120-229 行），HeroUI + UI Workflow 文档提炼，registry JSON 索引，template 体系，Git init
+- **Round 3**：资产覆盖率补全（137+ Skills 盘点、460 行功能手册、11 个 MCP 文档），UI Workflow L0→L6 全链路文档（4 篇新增），dashboard-starter 补全配置，遗留问题清零
 
 核心理念：**AI 编程不是写代码，是配置一个能持续运作的系统**。这个仓库就是那个系统。
 
@@ -51,20 +52,26 @@ threetwoa-cc-workshop/
 │   ├── commands/                   #   3 Commands（/distill-report / /restructure-repo / /update-registry）
 │   ├── rules/                      #   3 Rules（research-reporting / file-organization / no-secrets）
 │   └── skills/                     #   2 Skills（repo-manager / report-distiller）
-├── docs/                           # 提炼后的长期知识
-│   ├── claude-code/                #   6 篇 — 全功能谱系、Skills 清单、三层工作流等
+├── docs/                           # 提炼后的长期知识（37 篇）
+│   ├── claude-code/                #   7 篇 — 全功能谱系、Skills 清单、MCP 指南、三层工作流等
 │   ├── heroui/                     #   3 篇 — 组件参考、移植指南、模板架构
-│   └── ui-workflow/                #   7 篇 — 工作流标准、反模式、组合配方等
+│   ├── ui-workflow/                #   11 篇 — L0→L6 分层资产、工作流标准、反模式、组合配方等
+│   ├── methodology/                #   2 篇 — Superpowers 7 阶段、Matt Pocock Skills
+│   ├── routing/                    #   4 篇 — 命令 / 文件 / 工具 / UI 工序路由
+│   ├── templates/                  #   6 篇 — 交接 / PRD / 设计 / Codex 审查模板
+│   ├── style/                      #   1 篇 — 语言风格与颜文字池
+│   ├── environment/                #   1 篇 — Windows / WSL2 环境规则
+│   └── research/                   #   1 篇 — XCrawl 轻量调研
 ├── reports/raw/                    # 原始调研报告（只增不改）
 ├── templates/                      # 可复制项目模板
-│   ├── heroui/dashboard-starter/   #   HeroUI Dashboard 11 文件骨架
-│   └── ui-workflow/                #   PRODUCT.md / CLAUDE.md / DESIGN.md 模板
+│   ├── heroui/dashboard-starter/   #   HeroUI Dashboard 15 文件骨架
+│   ├── heroui/porting-checklist.md
+│   └── ui-workflow/                #   PRODUCT.md / CLAUDE.md / DESIGN.md / GSAP 检查清单
 ├── registry/                       # 资产索引（JSON + MD）
 ├── archive/                        # 历史归档
+│   └── 2026-05-30/                 #   Round 1-2 原始素材 + HANDOFF
 ├── reorg/                          # 重组规划记录（过程文档）
 ├── 00-START-HERE.md                # 首次访问入口
-├── archive/                         # 历史归档
-│   └── 2026-05-30/                  #   包含 HANDOFF-Round2.md 等历史文件
 └── README.md
 ```
 
@@ -88,13 +95,24 @@ threetwoa-cc-workshop/
 
 docs/
   INDEX.md
-  claude-code/feature-handbook.md, skills-inventory.md, diagram-skills-reference.md,
+  claude-code/feature-handbook.md (~460 行), skills-inventory.md (137+ Skills),
+  mcp-servers-guide.md (~180 行), diagram-skills-reference.md,
   codegraph-gitnexus-guide.md, claude-mem-guide.md, tri-layer-workflow.md
   heroui/component-reference.md (316 行), porting-guide.md (463 行),
   template-architecture.md (536 行)
-  ui-workflow/workflow-standard.md, tool-routing-cheatsheet.md, gsap-motion-guide.md,
-  anti-pattern-cookbook.md, skill-combination-recipes.md,
+  ui-workflow/workflow-standard.md, tool-routing-cheatsheet.md,
+  mkdirs-business-layer.md (226 行), motionsites-inspiration-layer.md (322 行),
+  taste-judgment-layer.md (240 行), aceternity-motion-layer.md (273 行),
+  gsap-motion-guide.md, anti-pattern-cookbook.md, skill-combination-recipes.md,
   diagram-tool-selection-guide.md, windows-skill-gap-workaround.md
+  methodology/superpowers.md, matt-pocock-skills.md
+  routing/command-routing.md, file-routing-standard.md,
+  tool-routing.md, ui-workflow-routing.md
+  templates/decision-needed-report.md, gpt-decision-material.md,
+  codex-review-material.md, handoff-report.md, prd.md, design.md
+  style/style-layer.md
+  environment/windows-wsl2.md
+  research/xcrawl_light_research.md
 
 registry/
   index.json, tags.json, assets.json, asset-index.md, decision-log.md,
@@ -102,7 +120,7 @@ registry/
   manifests/skills-manifest.json, commands-manifest.json
 
 templates/
-  heroui/dashboard-starter/ (11 文件: README, package.json, src/...)
+  heroui/dashboard-starter/ (15 文件: README, package.json, tsconfig, next.config, postcss, src/...)
   heroui/porting-checklist.md
   ui-workflow/project-PRODUCT.md, project-CLAUDE.md, project-DESIGN.md, gsap-checklist.md
 
@@ -160,6 +178,7 @@ reports/raw/ ──提炼──▶ docs/ ──索引──▶ registry/
 | P1 | 三层工作流文档 | ✅ |
 | P2 | Dashboard Starter 模板 + 项目模板 | ✅ |
 | P3 | Verification Report + Git init + Handoff | ✅ |
+| P4 | Round 2 遗留问题清零 + Codex Review + README 同步 | ✅ |
 
 ## 🚀 Quick Start
 
@@ -226,4 +245,4 @@ reports/raw/ ──提炼──▶ docs/ ──索引──▶ registry/
 
 ---
 
-*Last updated: 2026-05-30*
+*Last updated: 2026-06-01*
